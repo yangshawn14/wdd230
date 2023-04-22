@@ -1,3 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Concert+One&display=swap");
+
+body {
+    font-family: "Concert One", Times New Roman, cursive;
+}
+
 header, footer{
     background-color: #ECF9FF;
     margin: 1.25rem auto;
@@ -8,19 +14,33 @@ header, footer{
 header {
     display: grid;
     grid-template-columns: auto 1fr;
+    margin: 3.5rem;
 }
 
 footer {
     text-align: center;
+    margin: 3.5rem;
+    
 }
 
 img {
     height: 200px;
     width: 180px;
     align-items: first baseline;
+    margin: 10px;
 }
 
 h1 {
     margin: auto;
     text-align: center;
+    font-family: "Concert One", Times New Roman, cursive;
+    font-size: 5em;
+}
+
+main {
+    margin: 10px;
+}
+
+main ul li {
+    margin: .5em;
 }
