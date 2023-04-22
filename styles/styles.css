@@ -1,0 +1,26 @@
+header, footer{
+    background-color: #ECF9FF;
+    margin: 1.25rem auto;
+    
+
+}
+
+header {
+    display: grid;
+    grid-template-columns: auto 1fr;
+}
+
+footer {
+    text-align: center;
+}
+
+img {
+    height: 200px;
+    width: 180px;
+    align-items: first baseline;
+}
+
+h1 {
+    margin: auto;
+    text-align: center;
+}
