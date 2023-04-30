@@ -1,0 +1,43 @@
+/* colors
+#2F0F5D
+#0EA293
+#F5F3C1 */
+
+body {
+    font-family: 'Comfortaa', cursive;
+    color: white;
+}
+
+header, footer {
+    background-color: #2F0F5D;
+    text-align: center;
+    padding: 25px;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+div {
+    border-style: groove;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    background-color: #F5F3C1;
+    display: grid;
+    grid-template-columns: 1fr;
+    
+}
+
+h3 {
+    background-color: #0EA293;
+    
+}
+
+
+
+div p {
+    color: black;
+}
+
