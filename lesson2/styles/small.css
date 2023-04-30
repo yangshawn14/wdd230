@@ -25,19 +25,26 @@ div {
     border-top-left-radius: 25px;
     border-top-right-radius: 25px;
     background-color: #F5F3C1;
-    display: grid;
-    grid-template-columns: 1fr;
+    margin: 10px 0px;
+
     
 }
 
 h3 {
     background-color: #0EA293;
-    
+    align-self: start;
 }
 
-
+img {
+    height: auto;
+    width: 98%;
+    margin-left: 4px;
+    margin-top: 5px;
+}
 
 div p {
     color: black;
+    margin: 10px;
+    align-self: start;
 }
 
