@@ -1,0 +1,57 @@
+:root {
+    /* Color Palette */
+    --primary-color: #3C486B;
+    --secondary-color: #F0F0F0;
+    --accent1-color: #F9D949;
+    --accent2-color: #F45050;
+    
+  
+    /* Fonts */
+    --heading-font: Raleway, Verdana, sans-serif;
+    --paragraph-font: Lato, Helvetica, sans-serif;
+  
+    --paragraph-color-on-white: black; /* paragraph text on a white background */ 
+    --paragraph-color-on-color: white; /* paragraph text on a colored background */ 
+    --paragraph-background-color: #3C486B;
+    
+}
+
+
+
+
+.colors {
+    width: 100%;
+    min-width: 350px;
+    margin: auto;
+    text-align: center;
+  }
+
+  .colors th {
+    background-color: #999;
+  }
+
+  .colors td{
+    width: 25%;
+    height: 3em;
+  }
+  
+  .primary {
+    background-color: var(--primary-color);
+  }
+
+  .secondary {
+    background-color: var(--secondary-color);
+  }
+
+  .accent1 {
+    background-color: var(--accent1-color);
+  }
+
+  .accent2{
+    background-color: var(--accent2-color);
+  }
+
+  p.colored {
+    background-color: var(--paragraph-background-color);
+    color: var(--paragraph-color-on-color);
+  }
