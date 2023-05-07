@@ -1,0 +1,14 @@
+@media screen and (min-width: 769px) {
+    
+    nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+      }
+
+      nav a {
+        display: block;
+        padding: 20px 40px;
+        margin: 10px;
+    }
+}
