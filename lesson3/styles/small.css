@@ -13,11 +13,37 @@
     --paragraph-color-on-white: black; /* paragraph text on a white background */ 
     --paragraph-color-on-color: white; /* paragraph text on a colored background */ 
     --paragraph-background-color: #3C486B;
+
+    --nav-link-color: #F0F0F0;
+    --nav-hover-link-color: #F0F0F0;
+    --nav-hover-background-color: #F9D949;
+
     
 }
 
+body {
+    max-width: 1000px;
+    margin: 0 auto;
+}
 
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+}
 
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--heading-font);
+}
+
+h4 {
+    padding: 1em;
+}
+
+p {
+    font-family: var(--paragraph-font);
+    padding: 1em;
+  }
 
 .colors {
     width: 100%;
@@ -55,3 +81,55 @@
     background-color: var(--paragraph-background-color);
     color: var(--paragraph-color-on-color);
   }
+
+nav {
+  background-color: #3C486B;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  justify-content: space-around;
+}
+
+nav a {
+    font-size: 2em;
+}
+
+nav a:link, nav a:visited {
+  color: var(--nav-link-color);
+}
+
+nav a:hover {
+  color: var(--nav-hover-link-color);
+  background-color: var(--nav-hover-background-color);
+}  
+
+section {
+    background-color: #F0F0F0;
+    margin: 30px;
+}
+
+section h2, h3 {
+    text-align: center;
+}
+
+section li {
+    margin: 10px;
+}
+
+#scenario {
+    grid-column: 1 / 3;
+}
+
+#logo {
+    grid-column: 1 / 3;
+    text-align: center;
+}
+
+#style-guide {
+    text-align: center;
+}
+footer {
+    background-color: #3C486B;
+    color: #F0F0F0;
+    text-align: center;
+}
