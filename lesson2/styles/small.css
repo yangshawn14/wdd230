@@ -6,6 +6,8 @@
 body {
     font-family: 'Comfortaa', cursive;
     color: white;
+    max-width: 1000px;
+    margin: 0 auto;
 }
 
 header, footer {
