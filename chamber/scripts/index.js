@@ -13,8 +13,8 @@ let currYear = d.getFullYear();
 
 const lastModif = document.lastModified;
 
-year.innerHTML = `&#169; ${currYear} .:|:. Shawn Yang .:|:. Idaho`;
-dateModif.innerHTML = `Last updated ${lastModif}`;
+year.innerHTML = `&copy; ${currYear} Sacramento Chamber | Shawn Yang | WDD 230 Project | Last Modified ${lastModif}`;
+// dateModif.innerHTML = `Last updated ${lastModif}`;
 
 
 
