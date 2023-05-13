@@ -9,16 +9,48 @@
     exists to connect local businesses to the community. We help to connect
     all the different cultures and interests so that all may experience the
     the joys of Sacramento.">
+    
     <!-- Link CSS files -->
     <link rel="stylesheet" href="../styles/normalize.css">
     <link rel="stylesheet" href="../chamber/styles/base.css">
     <link rel="stylesheet" href="../chamber/styles/medium.css">
     <link rel="stylesheet" href="../chamber/styles/large.css">
+    <!-- Font Awesome link for Social Media Icons -->
+    <script src="https://kit.fontawesome.com/ee740aab1a.js" crossorigin="anonymous"></script>
+
     <title>Sacramento Chamber of Commerce</title>
 </head>
 <body>
     <header>
+        <div class="logo">
+            <!-- Logo Img-->
+            <picture>
+                <img src="" alt="Logo image">
+            </picture>
+    
+            <!-- Heading -->
+            <section class="headings">
+                <h1>Sacramento Chamber of Commerce</h1>
+            </section>
+            <!-- Nav Bar -->
+            <nav>
+                <ul>
+                    <li>Discover</li>
+                    <li>Directory</li>
+                    <li>Join</li>
+                    <li>Contact</li>
+                </ul>
+            </nav>
+        </div>
 
+        <!-- Social Media -->
+        <a href="http://facebook.com"><i class="fa-brands fa-facebook footer-icon"></i></a>
+        <a href="http://twitter.com"><i class="fa-brands fa-twitter footer-icon"></i></a>
+        <a href="http://instagram.com"><i class="fa-brands fa-instagram footer-icon"></i></a>
+
+        <!-- Current Date -->
+        <p id="currDate"></p>
+    
     </header>
     
     <main>
@@ -26,9 +58,10 @@
     </main>
 
     <footer>
-
+        <p id="year"></p>
+        <p id="dateModif"></p>
     </footer>
 
-    <script src=""></script>
+    <script src="../chamber/scripts/index.js"></script>
 </body>
 </html>
