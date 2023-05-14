@@ -4,6 +4,14 @@ const now = new Date();
 const fullDate = new Intl.DateTimeFormat("en-US", { dateStyle: "full" }).format(now);
 currDate.innerHTML = fullDate;
 
+// Add responsive class to navigation
+const hamButton = document.querySelector('#hamButton');
+const navigation = document.querySelector('.navigation');
+
+hamButton.addEventListener('click', () => {
+	navigation.classList.toggle('responsive');
+});
+
 // Footer
 let dateModif = document.querySelector("#dateModif");
 let year = document.querySelector("#year");
@@ -13,8 +21,9 @@ let currYear = d.getFullYear();
 
 const lastModif = document.lastModified;
 
-year.innerHTML = `&copy; ${currYear} Sacramento Chamber | Shawn Yang | WDD 230 Project | Last Modified ${lastModif}`;
-// dateModif.innerHTML = `Last updated ${lastModif}`;
+year.innerHTML = `&copy; ${currYear}`
+dateModif.innerHTML= `Last Modified ${lastModif}`;
+
 
 
 

@@ -1,0 +1,174 @@
+:root {
+    /* Color Palette */
+    --primary-color: #3C486B;
+    --secondary-color: #F0F0F0;
+    --accent1-color: #F9D949;
+    --accent2-color: #F45050;
+    
+  
+    /* Fonts */
+    --heading-font: Raleway, Verdana, sans-serif;
+    --paragraph-font: Lato, Helvetica, sans-serif;
+  
+    --paragraph-color-on-white: black; /* paragraph text on a white background */ 
+    --paragraph-color-on-color: white; /* paragraph text on a colored background */ 
+    --paragraph-background-color: #3C486B;
+
+    --nav-link-color: #F0F0F0;
+    --nav-hover-link-color: #3C486B;
+    --nav-hover-background-color: #F9D949;
+
+    
+}
+
+body {
+    background-color: var(--secondary-color);
+}
+
+header {
+    background-color: var(--primary-color);
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    margin: 0 auto;
+}
+
+.headings {
+    display: flex;
+    flex-direction: row;
+}
+
+nav {
+	max-width: 700px;
+	margin: 0 10px;
+}
+
+nav ul {
+    padding: 0;
+}
+
+#hamButton {
+	display: block;
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	width: fit-content;
+	font-size: 1.5rem;
+	padding: .5rem;
+	color: var(--primary-color);
+}
+
+.navigation {
+	display: flex;
+	flex-direction: column;
+	list-style: none;
+	background-color: var(--secondary-color);
+}
+
+.navigation li {
+	display: none;
+}
+
+.navigation li a {
+	padding: 1.15rem;
+	display: block;
+	text-align: center;
+	text-decoration: none;
+}
+
+.navigation li a:hover {
+	background-color: #bbb;
+	color: #333;
+	font-weight: 700;
+}
+
+/* when the button is clicked - the responsive class is added and accounted for here */
+.navigation.responsive li {
+	display: block;
+	width: 100%;
+}
+
+.navigation.responsive li a {
+	display: block;
+}
+
+#currDate {
+    background-color: var(--secondary-color);
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.social-media {
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 5px;
+}
+
+.item1, .item2, .item3, .item4, .item5 {
+    border-style: solid;
+    margin: 10px;
+    padding: 5px;
+}
+
+.item5 {
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+}
+
+.item5 div {
+    border-style: solid;
+    padding: 5px;
+}
+
+#spotlight-3 {
+    display: none;
+}
+
+footer {
+    background-color: var(--primary-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+#logo-address {
+    display: flex;
+    flex-direction: column;
+}
+
+
+hr {
+    background-color: var(--secondary-color);
+    height: 1px;
+    display: none;
+}
+
+.foot-logo, .contact-info, .student-info, #footer-year, #footer-student-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5px;
+}
+
+#footer-year, #footer-student-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#footer-year p, #footer-student-info p, #dateModif {
+    padding: 0 2px;
+    margin: 1px auto;
+}

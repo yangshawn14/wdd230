@@ -19,66 +19,71 @@
     <script src="https://kit.fontawesome.com/ee740aab1a.js" crossorigin="anonymous"></script>
 
     <title>Sacramento Chamber of Commerce</title>
+
 </head>
 <body>
     <header>
-        <div class="logo">
+    
+        <!-- Heading -->
+        <section class="headings">
             <!-- Logo Img-->
             <picture>
                 <img src="" alt="Logo image">
             </picture>
-    
-            <!-- Heading -->
-            <section class="headings">
-                <h1>Sacramento Chamber of Commerce</h1>
-            </section>
+            <h1>Sacramento Chamber of Commerce</h1>
+        
+        
             <!-- Nav Bar -->
-            <nav>
-                <ul>
-                    <li>Discover</li>
-                    <li>Directory</li>
-                    <li>Join</li>
-                    <li>Contact</li>
-                </ul>
-            </nav>
-        </div>
-
-        <!-- Social Media -->
-        <a href="http://facebook.com"><i class="fa-brands fa-facebook"></i></a>
-        <a href="http://twitter.com"><i class="fa-brands fa-twitter"></i></a>
-        <a href="http://instagram.com"><i class="fa-brands fa-instagram"></i></a>
-
+            <div>
+                <nav>
+                    <button id="hamButton">&#9776;</button>
+                    <ul class="navigation">
+                        <li><a href="#" title="Discover">Discover</a></li>
+                        <li><a href="#" title="Directory">Directory</a></li>
+                        <li><a href="#" title="Join">Join</a></li>
+                        <li><a href="#" title="Contact">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <!-- Social Media -->
+            <div>
+                <a href="http://facebook.com"><i class="fa-brands fa-facebook social-media"></i></a>
+                <a href="http://twitter.com"><i class="fa-brands fa-twitter social-media"></i></a>
+                <a href="http://instagram.com"><i class="fa-brands fa-instagram social-media"></i></a>
+            </div>
+        </section>
+    
         <!-- Current Date -->
         <p id="currDate"></p>
     
     </header>
     
-    <main>
+    <main class="grid-container">
         <!-- Hero and Call to Action -->
-        <section>
+        <section class="item1">
             <h2>Hero/Call to Action</h2>
         </section>
 
         <!-- Event -->
-        <section>
+        <section class="item2">
             <h2>Event</h2>
         </section>
         
         <!-- Weather -->
-        <section>
+        <section class="item3">
             <h2>Weather</h2>
         </section>
         
         <!-- New Release -->
-        <section>
+        <section class="item4">
             <h2>New Release</h2>
         </section>
         
         <!-- Spotlights -->
-        <section>
-            <h2>Spotlight 1</h2>
-            <h2>Spotlight 2</h2>
-            <h2>Spotlight 3</h2>
+        <section class="item5">
+            <div><h2>Spotlight 1</h2></div>
+            <div><h2>Spotlight 2</h2></div>
+            <div id="spotlight-3"><h2>Spotlight 3</h2></div>
         </section>
 
     </main>
@@ -89,13 +94,35 @@
             <picture>
                 <img src="" alt="Logo image">
             </picture>
-            <p>Address</p>
-            <P>email</P>
-            <p>phone</p>
-            <a href="">Location</a>
+            <section id="logo-address">
+                <p>Sacramento Chamber of Commerce</p>
+                <p>1315 10th St, Sacramento, CA 95814</p>
+            </section>
+        </div>
+        <div class="contact-info">
+            <P>saccoc@chamber.org</P>
+            <p>(916)123-4567</p>
+            <a href="https://www.google.com/maps/place/California+State+Capitol+Museum/@38.5765882,
+            -121.4980004,17z/data=!3m1!5s0x809ad1285c3e5921:0x44f1b1c83d8a743a!4m10!1m2!2m1!1ssacra
+            mento+state+capitol!3m6!1s0x809ad604aa6cdb95:0x5420911f181a4d5!8m2!3d38.5765882!4d-121.4
+            932368!15sChhzYWNyYW1lbnRvIHN0YXRlIGNhcGl0b2xaGiIYc2FjcmFtZW50byBzdGF0ZSBjYXBpdG9skgEOaGl
+            zdG9yeV9tdXNldW2aASRDaGREU1VoTk1HOW5TMFZKUTBGblNVUXdlRGQ2Wm5sM1JSQULgAQA!16zL20vMDY5cjg4"
+            >Location Map</a>
         </div>
         <hr>
-        <p id="year"></p>
+        <div class="student-info">
+            <section id="footer-year">
+                <p id="year"></p>
+                <p>Sacramento Chamber</p>
+            </section>
+            
+            <section id="footer-student-info">
+                <p>Shawn Yang</p>  
+                <p>WDD 230 Project</p>
+            </section>
+            
+            <p id="dateModif"></p>
+        </div>
     </footer>
 
     <script src="../chamber/scripts/index.js"></script>
