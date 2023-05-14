@@ -25,6 +25,14 @@ body {
     background-color: var(--secondary-color);
 }
 
+h1, h2 {
+    font-family: var(--heading-font);
+}
+
+p {
+    font-family: var(--paragraph-font);
+}
+
 header {
     background-color: var(--primary-color);
     display:flex;
@@ -100,7 +108,7 @@ nav ul {
     padding: 5px;
 }
 
-.social-media {
+i {
     display: flex;
     flex-direction: row;
     margin: 10px;
@@ -109,7 +117,6 @@ nav ul {
 main {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
     padding: 5px;
 }
 
@@ -131,6 +138,10 @@ main {
 }
 
 #spotlight-3 {
+    display: none;
+}
+
+.item6 h2 {
     display: none;
 }
 
@@ -171,4 +182,8 @@ hr {
 #footer-year p, #footer-student-info p, #dateModif {
     padding: 0 2px;
     margin: 1px auto;
+}
+
+.footer-break {
+    display: none;
 }
