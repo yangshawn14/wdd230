@@ -1,7 +1,7 @@
 // Current date for Header
 let currDate = document.querySelector("#currDate");
 const now = new Date();
-const fullDate = new Intl.DateTimeFormat("en-US", { dateStyle: "full" }).format(now);
+const fullDate = new Intl.DateTimeFormat("en-UK", { dateStyle: "full" }).format(now);
 currDate.innerHTML = fullDate;
 
 // Add responsive class to navigation
