@@ -23,6 +23,8 @@
 
 body {
     background-color: var(--secondary-color);
+    max-width: 1000px;
+    margin: 0 auto;
 }
 
 h1, h2 {
