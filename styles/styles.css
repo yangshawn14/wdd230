@@ -1,7 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Concert+One&display=swap");
 
 body {
+    max-width: 1000px;
     font-family: "Concert One", Times New Roman, cursive;
+    margin: 0 auto;
 }
 
 header, footer{
@@ -37,10 +39,15 @@ h1 {
     font-size: 5em;
 }
 
+h2 {
+    text-align: center;
+}
+
 main {
     margin: 10px;
 }
 
 main ul li {
     margin: .5em;
+    margin-left: 320px;
 }
