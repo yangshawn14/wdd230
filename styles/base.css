@@ -51,3 +51,8 @@ main ol li {
     margin: .5em;
     margin-left: 320px;
 }
+
+.card {
+    border-style: solid;
+    margin: 10px;
+}
