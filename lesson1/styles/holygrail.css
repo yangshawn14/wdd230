@@ -1,13 +1,23 @@
+ * {
+    box-sizing: border-box;
+  }
+
 body {
     display: grid;
     height: 100vh;
-    grid-template: auto 1fr auto / 300px 1fr auto;
+    grid-template: auto auto 1fr auto / 1fr auto;
   }
   
   header {
     background: lightpink;
     padding: 2rem;
     grid-column: 1 / 4;
+  }
+
+  nav {
+    background: aquamarine;
+    grid-column: 1 / 4;
+    padding: 2rem;
   }
   
   .left-sidebar {
@@ -17,7 +27,8 @@ body {
   
   main {
     background: coral;
-    grid-column: 2 / 3;
+    grid-column: 1 / 3;
+    height: 100%;
   }
   
   .right-sidebar {
@@ -36,4 +47,3 @@ body {
   .right-sidebar {
     padding: 1rem;
   }
-  
