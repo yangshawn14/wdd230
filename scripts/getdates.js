@@ -6,6 +6,6 @@ let currYear = d.getFullYear();
 
 const lastModif = document.lastModified;
 
-year.innerHTML = `&#169; ${currYear} <br/> Shawn Yang <br/> Idaho`;
+year.innerHTML = currYear;
 dateModif.innerHTML = `Last updated ${lastModif}`;
 
