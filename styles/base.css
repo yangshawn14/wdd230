@@ -31,12 +31,35 @@ nav {
 
 }
 
+#menu {
+    font-size: 1.25rem;
+    border: 1px solid rgba(0,0,0,.3);
+	padding: 3px 7px 6px;
+	background-color: #eee;
+	color: #000;
+ 	position: absolute;
+	top: 1em;
+	right: 1em;
+}
+
+#menu::before {
+    content: "☰"
+}
+
+#menu.open::before {
+    content: "❌"
+}
+
 nav ul {
     list-style-type: none;
     text-align: center;
     margin: 0;
     padding: 0;
     
+}
+
+nav li {
+    display: none;
 }
 
 nav a {
@@ -48,6 +71,18 @@ nav a {
 nav a:hover {
     border: 1px solid #fff;
 }
+
+/* When menu button is clicked on small view */
+.open li {
+    display: block;
+    width: 100%;
+}
+
+.open li a {
+    display: block;
+}
+
+
 
 img {
     height: auto;
