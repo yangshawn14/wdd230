@@ -38,6 +38,13 @@
         margin-left: 10px;
     }
 
+    .map {
+        width: 800px;
+        height: 600px;
+        position: relative;
+        left: 100px;
+    }
+
     #base-footer {
         display: flex;
         flex-direction: column;
