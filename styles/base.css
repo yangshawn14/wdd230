@@ -103,6 +103,15 @@ img {
     height: auto;
 }
 
+.herolabel {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    /* background: radial-gradient(#fff, #4D5B97); */
+    border: 1px solid;
+    padding: 1rem;
+}
+
 h1 {
     margin: auto;
     text-align: center;
