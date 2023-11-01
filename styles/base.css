@@ -94,6 +94,10 @@ img {
     margin: 10px;
 }
 
+.hero {
+    position: relative;
+}
+
 .hero img {
     width: 100%;
     height: auto;
