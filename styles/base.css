@@ -94,6 +94,11 @@ img {
     margin: 10px;
 }
 
+.hero img {
+    width: 100%;
+    height: auto;
+}
+
 h1 {
     margin: auto;
     text-align: center;
