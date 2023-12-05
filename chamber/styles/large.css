@@ -35,15 +35,9 @@
     
     .item5 {
         grid-area: item5;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-
-    }
-
-    
-    #spotlight-3 {
-        display: block;
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-columns: 1fr;
     }
 
     .item6 {
@@ -58,9 +52,13 @@
         display: grid;
         grid-template-areas: 
         'item2 item1 item1 item5'
+        'item2 item1 item1 item5'
         'item3 item1 item1 item5'
+        'item3 item1 item1 item5'
+        'item6 item1 item1 item5'
         'item6 item4 item4 item5';
-        
+        grid-template-rows: repeat(6, 1fr);
+        grid-template-columns: repeat(4, 1fr);
     }
 
     .student-info {

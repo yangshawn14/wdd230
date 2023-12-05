@@ -1,9 +1,9 @@
 :root {
     /* Color Palette */
-    --primary-color: #3C486B;
-    --secondary-color: #F0F0F0;
-    --accent1-color: #F9D949;
-    --accent2-color: #F45050;
+    --primary-color: #0077b6;
+    --secondary-color: #f3f3f3;
+    --accent1-color: #1eae98;
+    --accent2-color: #ff6b6b;
     
   
     /* Fonts */
@@ -21,18 +21,35 @@
     
 }
 
+* {
+    font-family: var(--heading-font);   
+}
+
 body {
     background-color: var(--secondary-color);
-    max-width: 1000px;
+    max-width: 1200px;
     margin: 0 auto;
+}
+
+header *:not(#currDate, .navigation *, #hamButton), footer {
+    color: var(--secondary-color)
 }
 
 h1, h2 {
     font-family: var(--heading-font);
 }
 
-p {
+p, span {
     font-family: var(--paragraph-font);
+}
+
+h1 {
+    display: flex;
+    flex-direction: column;
+}
+
+h1 span {
+    font-size: large;
 }
 
 header {
@@ -40,7 +57,7 @@ header {
     display:flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     padding: 5px;
     margin: 0 auto;
 }
@@ -50,8 +67,19 @@ header {
     flex-direction: row;
 }
 
+.heading-logo {
+    width: 100px;
+    height: auto;
+    border-radius: 10px;
+    margin: 0.5rem;
+}
+
+.nav-social {
+    list-style: none;
+}
+
 nav {
-	max-width: 700px;
+	max-width: 100%;
 	margin: 0 10px;
 }
 
@@ -71,8 +99,8 @@ nav ul {
 }
 
 .navigation {
-	display: flex;
-	flex-direction: column;
+    display: flex;
+    flex-direction: column;
 	list-style: none;
 	background-color: var(--secondary-color);
 }
@@ -96,12 +124,19 @@ nav ul {
 
 /* when the button is clicked - the responsive class is added and accounted for here */
 .navigation.responsive li {
-	display: block;
-	width: 100%;
+    display: block;
+    
 }
 
-.navigation.responsive li a {
-	display: block;
+.navigation.responsive li a:hover {
+    background-color: #bbb;
+	color: #333;
+	font-weight: 700;
+}
+
+
+section:not(section.headings) {
+    background-color: var(--secondary-color);
 }
 
 #currDate {
@@ -115,6 +150,9 @@ i {
     flex-direction: row;
     margin: 10px;
 }
+
+
+
 
 main {
     display: flex;
@@ -137,10 +175,6 @@ main {
 .item5 div {
     border-style: solid;
     padding: 5px;
-}
-
-#spotlight-3 {
-    display: none;
 }
 
 .item6 h2 {
@@ -168,11 +202,47 @@ hr {
     display: none;
 }
 
-.foot-logo, .contact-info, .student-info, #footer-year, #footer-student-info {
+.foot-logo {
+    width: 100px;
+    height: auto;
+    border-radius: 10px;
+}
+
+#logo-address {
+    background-color: var(--primary-color);
+}
+
+footer a {
+    text-decoration: none;
+    color: var(--secondary-color);
+    position: relative;
+    transition: 0.5s;
+}
+
+footer a::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: 0;
+    height: 3px;
+    background: linear-gradient(90deg, transparent, var(--accent2-color), transparent);
+    transition: width 0.5s ease, left 0.5s ease;
+}
+
+footer a:hover::before {
+    width: 100%;
+    left: 0;
+    right: 0;
+}
+
+
+.footer-logo, .contact-info, .student-info, #footer-year, #footer-student-info {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 5px;
+    background-color: var(--primary-color);
 }
 
 #footer-year, #footer-student-info {

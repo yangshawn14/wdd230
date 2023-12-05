@@ -18,7 +18,8 @@
     <link rel="stylesheet" href="../chamber/styles/large.css">
     <!-- Font Awesome link for Social Media Icons -->
     <script src="https://kit.fontawesome.com/ee740aab1a.js" crossorigin="anonymous"></script>
-
+    <!-- Link Favicon ** -->
+    <link rel="shortcut icon" href="../chamber/images/favicon.ico" type="image/x-icon">
     <title>Sacramento Chamber of Commerce</title>
 
 </head>
@@ -29,11 +30,23 @@
         <section class="headings">
             <!-- Logo Img-->
             <picture>
-                <img src="" alt="Logo image">
+                <img class="heading-logo" src="../chamber/images/sac-coc-logo.webp" alt="Logo image">
             </picture>
-            <h1>Sacramento Chamber of Commerce</h1>
+            <h1>
+                Sacramento 
+                <span>Chamber of Commerce</span>
+            </h1>
         
-        
+            <!-- Social Media -->
+            <ul class="nav-social">
+                <li>
+                    <a href="http://facebook.com"><i class="fa-brands fa-facebook" style="color: #eceff4;"></i></a>
+                </li>
+                <li>
+                    <a href="http://twitter.com"><i class="fa-brands fa-twitter" style="color: #eceff4;"></i></a>
+                </li>
+            </ul>
+                
             <!-- Nav Bar -->
             <div>
                 <nav>
@@ -45,11 +58,6 @@
                         <li><a href="#" title="Contact">Contact</a></li>
                     </ul>
                 </nav>
-            </div>
-            <!-- Social Media -->
-            <div>
-                <a href="http://facebook.com"><i class="fa-brands fa-facebook" style="color: #eceff4;"></i></a>
-                <a href="http://twitter.com"><i class="fa-brands fa-twitter" style="color: #eceff4;"></i></a>
             </div>
         </section>
     
@@ -94,25 +102,28 @@
     </main>
 
     <footer>
-        <!-- Logo Img -->
-        <div class="foot-logo">
-            <picture>
-                <img src="" alt="Logo image">
-            </picture>
-            <section id="logo-address">
-                <p>Sacramento Chamber of Commerce</p>
-                <p>1315 10th St, Sacramento, CA 95814</p>
-            </section>
-        </div>
-        <div class="contact-info">
-            <P>saccoc@chamber.org</P>
-            <p>(916)123-4567</p>
-            <a href="https://www.google.com/maps/place/California+State+Capitol+Museum/@38.5765882,
-            -121.4980004,17z/data=!3m1!5s0x809ad1285c3e5921:0x44f1b1c83d8a743a!4m10!1m2!2m1!1ssacra
-            mento+state+capitol!3m6!1s0x809ad604aa6cdb95:0x5420911f181a4d5!8m2!3d38.5765882!4d-121.4
-            932368!15sChhzYWNyYW1lbnRvIHN0YXRlIGNhcGl0b2xaGiIYc2FjcmFtZW50byBzdGF0ZSBjYXBpdG9skgEOaGl
-            zdG9yeV9tdXNldW2aASRDaGREU1VoTk1HOW5TMFZKUTBGblNVUXdlRGQ2Wm5sM1JSQULgAQA!16zL20vMDY5cjg4"
-            >Location Map</a>
+        <div class="chamber-footer">
+            <!-- Logo Img -->
+            <div class="footer-logo">
+                <picture>
+                    <img class="foot-logo" src="../chamber/images/sac-coc-logo.webp" alt="Logo image">
+                </picture>
+                <section id="logo-address">
+                    <p>Sacramento Chamber of Commerce</p>
+                    <p>1315 10th St, Sacramento, CA 95814</p>
+                </section>
+            </div>
+            <div class="contact-info">
+                <span>saccoc@chamber.org</span>
+                <span>(916)123-4567</span>
+                <a href="https://www.google.com/maps/place/California+State+Capitol+Museum/@38.5765882,
+                    -121.4980004,17z/data=!3m1!5s0x809ad1285c3e5921:0x44f1b1c83d8a743a!4m10!1m2!2m1!1ssacra
+                    mento+state+capitol!3m6!1s0x809ad604aa6cdb95:0x5420911f181a4d5!8m2!3d38.5765882!4d-121.4
+                    932368!15sChhzYWNyYW1lbnRvIHN0YXRlIGNhcGl0b2xaGiIYc2FjcmFtZW50byBzdGF0ZSBjYXBpdG9skgEOaGl
+                    zdG9yeV9tdXNldW2aASRDaGREU1VoTk1HOW5TMFZKUTBGblNVUXdlRGQ2Wm5sM1JSQULgAQA!16zL20vMDY5cjg4">
+                    📍 Location Map</a>
+                
+            </div>
         </div>
         <hr>
         <div class="student-info">
@@ -127,6 +138,7 @@
                 <p>Shawn Yang</p>  
                 <p class="footer-break">|</p>
                 <p>WDD 230 Project</p>
+                <p class="footer-break">|</p>
             </section>
             
             <p id="dateModif"></p>
