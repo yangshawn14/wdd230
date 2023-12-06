@@ -5,11 +5,12 @@ const fullDate = new Intl.DateTimeFormat("en-UK", { dateStyle: "full" }).format(
 currDate.innerHTML = fullDate;
 
 // Add responsive class to navigation
-const hamButton = document.querySelector('#hamButton');
+const hamButton = document.querySelector('.hamButton');
 const navigation = document.querySelector('.navigation');
 
 hamButton.addEventListener('click', () => {
 	navigation.classList.toggle('responsive');
+	hamButton.classList.toggle('open');
 });
 
 // Footer
