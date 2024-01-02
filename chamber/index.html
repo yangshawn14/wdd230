@@ -25,46 +25,42 @@
 </head>
 <body>
     <header>
-    
+        <!-- Logo Img-->
+        <a href="..chamber/index.html" target="_blank">
+            <picture>
+                <img class="heading-logo" src="../chamber/images/sac-coc-logo.webp" alt="Logo image">
+            </picture>
+        </a>
         <!-- Heading -->
-        <section class="headings">
-            <!-- Logo Img-->
-            <a href="..chamber/index.html" target="_blank">
-                <picture>
-                    <img class="heading-logo" src="../chamber/images/sac-coc-logo.webp" alt="Logo image">
-                </picture>
-            </a>
-            <h1>
-                Sacramento
-                <span>Chamber of Commerce</span>
-            </h1>
+        <h1 class="headings">
+            Sacramento
+            <span>Chamber of Commerce</span>
+        </h1>
     
-            <!-- Social Media -->
-            <ul class="nav-social">
-                <li>
-                    <a href="http://facebook.com"><i class="fa-brands fa-facebook" style="color: #eceff4;"></i></a>
-                </li>
-                <li>
-                    <a href="http://twitter.com"><i class="fa-brands fa-twitter" style="color: #eceff4;"></i></a>
-                </li>
+        <!-- Social Media -->
+        <ul class="nav-social">
+            <li>
+                <a href="http://facebook.com"><i class="fa-brands fa-facebook" style="color: #eceff4;"></i></a>
+            </li>
+            <li>
+                <a href="http://twitter.com"><i class="fa-brands fa-twitter" style="color: #eceff4;"></i></a>
+            </li>
+        </ul>
+    
+        <!-- Nav Bar -->
+    
+        <button class="hamButton">
+            <span>&#9776;</span>
+            <span>X</span>
+        </button>
+        <nav>
+            <ul class="navigation">
+                <li><a href="#" title="Discover">Discover</a></li>
+                <li><a href="#" title="Directory">Directory</a></li>
+                <li><a href="#" title="Join">Join</a></li>
+                <li><a href="#" title="Contact">Contact</a></li>
             </ul>
-    
-            <!-- Nav Bar -->
-    
-            <button class="hamButton">
-                <span>&#9776;</span>
-                <span>X</span>
-            </button>
-            <nav>
-                <ul class="navigation">
-                    <li><a href="#" title="Discover">Discover</a></li>
-                    <li><a href="#" title="Directory">Directory</a></li>
-                    <li><a href="#" title="Join">Join</a></li>
-                    <li><a href="#" title="Contact">Contact</a></li>
-                </ul>
-            </nav>
-    
-        </section>
+        </nav>
     
         <!-- Current Date -->
         <p id="currDate"></p>
@@ -76,6 +72,11 @@
         <!-- Hero and Call to Action -->
         <section class="item1">
             <h2>Hero/Call to Action</h2>
+            <picture>
+                <source media="(min-width: 500px)" srcset="images/sacramento-small.webp">
+                <source media="(min-width: 1000px)" srcset="images/sacramento-medium.webp">
+                <img src="images/sacramento-large.webp" alt="picture of Sacramento">
+            </picture>
         </section>
 
         <!-- Event -->
