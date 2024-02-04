@@ -3,7 +3,9 @@
     --primary-color: #0077b6;
     --secondary-color: #f3f3f3;
     --accent1-color: #1eae98;
+    --accent1-color-rgb: 30, 174, 152;
     --accent2-color: #ff6b6b;
+    --accent2-color-rgb: 255, 107, 107;
     
   
     /* Fonts */
@@ -178,9 +180,6 @@ i {
     margin: 10px;
 }
 
-
-
-
 main {
     display: flex;
     flex-direction: column;
@@ -188,8 +187,52 @@ main {
 }
 
 .item1 {
-    margin: 2px;
-} 
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+    margin: 0;
+    padding: 0;
+}
+
+.hero {
+    grid-column: 1/13;
+    grid-row: 1/-1;
+}
+
+.item1 img {
+    width: 100%;
+    height: auto;
+}
+
+.item1 h2 {
+    margin: 0;
+    font-style: var(--heading-font);
+    font-size: x-large;
+    color: var(--secondary-color);
+    background-color: var(--accent1-color);
+    z-index: 1;
+    grid-column: 1/13;
+    grid-row: 1/2;
+    justify-self: center;
+}
+
+.cta {
+    grid-column: 4/10;
+    grid-row: 4/5;
+    color: var(--nav-link-color);
+    justify-self: center;
+    text-decoration: none;
+    border: solid 1px;
+    padding-top: 3px;
+    border-radius: 15%;
+    background-color: rgba(var(--accent2-color-rgb), 0.65);
+}
+
+.cta:hover {
+    background-color: var(--nav-hover-background-color);
+}
+
+
 .item2, .item3, .item4, .item5 {
     border-style: solid;
     margin: 10px;
@@ -227,9 +270,8 @@ footer {
 
 
 hr {
-    background-color: var(--secondary-color);
+    background-color: var(--nav-hover-link-color);
     height: 1px;
-    display: none;
 }
 
 .foot-logo {

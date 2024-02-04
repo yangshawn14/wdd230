@@ -147,6 +147,11 @@ main ol li {
     text-align: center;
 }
 
+.map {
+    width: 400px;
+    height: 300px;
+    border: 0;
+}
 #base-footer {
     text-align: center;
 }
