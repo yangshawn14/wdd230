@@ -6,25 +6,27 @@
     --accent1-color-rgb: 30, 174, 152;
     --accent2-color: #ff6b6b;
     --accent2-color-rgb: 255, 107, 107;
-    
-  
+
+
     /* Fonts */
     --heading-font: Raleway, Verdana, sans-serif;
     --paragraph-font: Lato, Helvetica, sans-serif;
-  
-    --paragraph-color-on-white: black; /* paragraph text on a white background */ 
-    --paragraph-color-on-color: white; /* paragraph text on a colored background */ 
+
+    --paragraph-color-on-white: black;
+    /* paragraph text on a white background */
+    --paragraph-color-on-color: white;
+    /* paragraph text on a colored background */
     --paragraph-background-color: #3C486B;
 
     --nav-link-color: #F0F0F0;
     --nav-hover-link-color: #3C486B;
     --nav-hover-background-color: #F9D949;
 
-    
+
 }
 
 * {
-    font-family: var(--heading-font);   
+    font-family: var(--heading-font);
 }
 
 body {
@@ -33,15 +35,18 @@ body {
     margin: 0 auto;
 }
 
-header *:not(#currDate, .navigation *, .hamButton *), footer {
+header *:not(#currDate, .navigation *, .hamButton *),
+footer {
     color: var(--secondary-color)
 }
 
-h1, h2 {
+h1,
+h2 {
     font-family: var(--heading-font);
 }
 
-p, span {
+p,
+span {
     font-family: var(--paragraph-font);
 }
 
@@ -60,10 +65,9 @@ header {
     grid-template-columns: 80px repeat(11, 1fr);
     grid-template-rows: 90px auto auto;
     align-items: center;
-    justify-content: center;
 }
 
-.headings {
+.headings a {
     display: flex;
     flex-direction: column;
     grid-column: 2/7;
@@ -74,31 +78,30 @@ header {
     height: auto;
     border-radius: 50%;
     margin: 0.5rem;
+    margin-bottom: .2rem;
+
 }
 
 .nav-social {
     list-style: none;
-    grid-column: 7/9;
+    grid-column: 3 / 3;
     display: flex;
+    flex-direction: column;
+    padding-left: 1rem;
 }
 
 nav {
-	max-width: 100%;
-	margin: 0 10px;
-}
-
-nav ul {
-    padding: 0;
+    grid-column: 1 / 13;
 }
 
 .hamButton {
-	display: block;
-	position: absolute;
-	top: 25px;
-	right: 15px;
-	width: fit-content;
-	font-size: 1.5rem;
-	padding: .5rem;
+    display: block;
+    position: absolute;
+    top: 25px;
+    right: 15px;
+    width: fit-content;
+    font-size: 1.5rem;
+    padding: .5rem;
     background-color: transparent;
     border: none;
 }
@@ -120,45 +123,41 @@ nav ul {
 }
 
 .navigation {
-    list-style: none;
-	background-color: var(--secondary-color);
-    position: absolute;
-    top: 70px;
-    left: 0;
-    width: 100%;
-    box-sizing: border-box;
     display: none;
-    z-index: 2;
+    padding: 0;
+    margin: 0;
 }
 
 .navigation li {
-	display: block;
+    display: block;
+    background: var(--primary-color);
 }
 
 .navigation li a {
-	padding: 1.15rem;
-	display: block;
-	text-align: center;
-	text-decoration: none;
+    padding: .5rem;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: var(--nav-link-color);
 }
 
 .navigation li a:hover {
-	background-color: #bbb;
-	color: #333;
-	font-weight: 700;
+    /* background-color: var(--nav-link-color); */
+    /* color: #333; */
+    font-weight: 700;
 }
 
 /* when the button is clicked - the responsive class is added and accounted for here */
 .navigation.responsive {
     display: flex;
     flex-direction: column;
-    
+
 }
 
 .navigation.responsive li a:hover {
     background-color: #bbb;
-	color: #333;
-	font-weight: 700;
+    color: #333;
+    font-weight: 700;
 }
 
 
@@ -170,9 +169,10 @@ section:not(section.headings) {
     background-color: var(--secondary-color);
     border-radius: 5px;
     padding: 5px;
-    grid-column: 2/11;
+    grid-column: 1/13;
     text-align: center;
     grid-row: 2/3;
+    margin: 0.25rem;
 }
 
 i {
@@ -234,7 +234,9 @@ main {
 }
 
 
-.item2, .item3, .item4 {
+.item2,
+.item3,
+.item4 {
     border-style: solid;
     margin: 10px;
     padding: 5px;
@@ -246,7 +248,8 @@ main {
 
 .wrapper {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Adjust as needed */
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    /* Adjust as needed */
     gap: 10px;
 }
 
@@ -260,9 +263,24 @@ main {
     text-align: center;
 }
 
-.item5 div {
-    border-style: solid;
+.spotlight {
+    text-align: center;
+    background-color: var(--paragraph-background-color);
+    color: var(--nav-link-color);
+    border: solid 1px;
     padding: 5px;
+}
+
+.spotlight h3 {
+    text-align: left;
+}
+
+.spotlight p {
+    margin: .05rem;
+}
+
+.spotlight a {
+    display: inline-block;
 }
 
 .item6 h2 {
@@ -271,10 +289,10 @@ main {
 
 footer {
     background-color: var(--primary-color);
-    display: flex;
+    /* display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: center; */
     padding: 10px;
 }
 
@@ -289,6 +307,10 @@ hr {
     height: 1px;
 }
 
+footer hr {
+    display: block;
+}
+
 .foot-logo {
     width: 100px;
     height: auto;
@@ -299,46 +321,71 @@ hr {
     background-color: var(--primary-color);
 }
 
-footer a {
+a {
     text-decoration: none;
     color: var(--secondary-color);
     position: relative;
     transition: 0.5s;
 }
 
-footer a::before {
+a::before {
     content: '';
     position: absolute;
     left: 50%;
     bottom: 0;
     width: 0;
     height: 3px;
-    background: linear-gradient(90deg, transparent, var(--accent2-color), transparent);
+    background: linear-gradient(90deg, transparent, var(--nav-link-color), transparent);
     transition: width 0.5s ease, left 0.5s ease;
 }
 
-footer a:hover::before {
+a:hover::before {
     width: 100%;
     left: 0;
     right: 0;
 }
 
 
-.footer-logo, .contact-info, .student-info, #footer-year, #footer-student-info {
+.footer-logo,
+.contact-info,
+.student-info,
+#footer-year,
+#footer-student-info {
     display: flex;
-    flex-direction: column;
     align-items: center;
     padding: 5px;
     background-color: var(--primary-color);
 }
 
-#footer-year, #footer-student-info {
+.contact-info,
+.student-info,
+#footer-year,
+#footer-student-info {
+    flex-direction: column;
+}
+
+.footer-logo {
+    gap: 10px;
+}
+
+h4 {
+    margin-bottom: 5px;
+}
+
+#address {
+    margin-top: 2px;
+}
+
+#footer-year,
+#footer-student-info {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
 
-#footer-year p, #footer-student-info p, #dateModif {
+#footer-year p,
+#footer-student-info p,
+#dateModif {
     padding: 0 2px;
     margin: 1px auto;
 }

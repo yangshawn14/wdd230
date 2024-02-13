@@ -1,95 +1,147 @@
-@media only screen and (min-width: 480px) {
+ @media only screen and (min-width: 480px) {
 
-    .item1 {
-        grid-area: item1;
-    }
-    
-    .item2 {
-        grid-area: item2;
-    }
-    
-    .item3 {
-        grid-area: item3;
-    }
-    
-    .item4 {
-        grid-area: item4;
-    }
-    
-    .item5 {
-        grid-area: item5;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-    }
+     .headings {
+         grid-column: 2 / 4;
+         grid-row: 1/2;
+     }
 
-    .item6 {
-        grid-area: item6;
-        border-style: solid;
-        margin: 10px;
-        padding: 5px;
-    }
+     .headings a {
+         padding-bottom: .5rem;
+     }
 
-    .item6 h2{
-        display: block;
-    }
-    
-    .grid-container {
-        display: grid;
-        /* grid-template-columns: repeat(1fr, 3);
-        grid-template-rows: repeat(1fr, 5); */
-        grid-template-areas: 
-        'item1 item1 item1'
-        'item4 item4 item4'
-        ' item5 item5 item5'
-        'item6 item6 item6'
-        'item2 item2 item3';
-        
-    }
+     .nav-social {
+         flex-direction: row;
+         grid-column: 6 / 8;
+         grid-row: 1 / 2;
+     }
 
-    footer {
-        display: block;
-    }
+     .nav-social li a {
+         padding: .5rem;
+     }
 
-    .chamber-footer {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-evenly;
-    }
+     .hamButton {
+         display: none;
+     }
 
-    .footer-logo {
-        display: grid;
-        grid-template-columns: 110px 75%;
-    }
-    
-    #logo-address p:first-child {
-       margin: 0;
-    }
+     .fa-brands {
+         font-size: 35px;
+     }
 
-    #logo-address p:nth-child(2) {
-        margin-top: 5px;
-    }
+     nav {
+         grid-column: 8 / 14;
+         grid-row: 1 / 2;
 
-    .contact-info * {
-        margin: 5px;
-    }
+     }
 
-    #footer-year, #footer-student-info {
-        padding: 0;
-    }
+     .navigation {
+         display: flex;
+         justify-content: space-around;
 
-    .student-info{
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-    }
+         align-items: center;
 
-    .footer-break {
-        display: contents;
-    }
+     }
 
-    #dateModif {
-        margin: 0;
-    }
-}
+     .navigation li {
+         align-items: center;
+         justify-content: center;
+     }
+
+     #currDate {
+         grid-row: 3/4;
+         grid-column: 1/13;
+     }
+
+     .item1 {
+         grid-area: item1;
+     }
+
+     .item2 {
+         grid-area: item2;
+     }
+
+     .item3 {
+         grid-area: item3;
+     }
+
+     .item4 {
+         grid-area: item4;
+     }
+
+     .item5 {
+         grid-area: item5;
+         display: grid;
+         grid-template-columns: 1fr 1fr;
+     }
+
+     .item6 {
+         grid-area: item6;
+         border-style: solid;
+         margin: 10px;
+         padding: 5px;
+     }
+
+     .item6 h2 {
+         display: block;
+     }
+
+     .grid-container {
+         display: grid;
+
+
+         grid-template-areas:
+             'item1 item1 item1'
+             'item4 item4 item4'
+             ' item5 item5 item5'
+             'item6 item6 item6'
+             'item2 item2 item3';
+
+     }
+
+     footer {
+         display: block;
+     }
+
+     .chamber-footer {
+         display: flex;
+         flex-direction: row;
+         align-items: center;
+         justify-content: space-evenly;
+     }
+
+     .footer-logo {
+         display: grid;
+         grid-template-columns: 110px 75%;
+     }
+
+     #logo-address p:first-child {
+         margin: 0;
+     }
+
+     #logo-address p:nth-child(2) {
+         margin-top: 5px;
+     }
+
+     .contact-info * {
+         margin: 5px;
+     }
+
+     #footer-year,
+     #footer-student-info {
+         padding: 0;
+     }
+
+     .student-info {
+         display: flex;
+         flex-direction: row;
+         align-items: center;
+         justify-content: center;
+     }
+
+     .footer-break {
+         display: contents;
+     }
+
+     #dateModif {
+         margin: 0;
+     }
+ }

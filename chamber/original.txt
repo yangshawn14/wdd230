@@ -1,45 +1,15 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="author" content="Shawn Yang">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Meta Description -->
-    <meta name="description" content="The Sacramento Chamber of Commerce
-    exists to connect local businesses to the community. We help to connect
-    all the different cultures and interests so that all may experience the
-    the joys of Sacramento.">
-    <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Raleway&display=swap" rel="stylesheet">
-    <!-- Link CSS files -->
-    <link rel="stylesheet" href="../styles/normalize.css">
-    <link rel="stylesheet" href="../chamber/styles/base.css">
-    <link rel="stylesheet" href="../chamber/styles/medium.css">
-    <!-- <link rel="stylesheet" href="../chamber/styles/large.css"> -->
-    <!-- Font Awesome link for Social Media Icons -->
-    <script src="https://kit.fontawesome.com/ee740aab1a.js" crossorigin="anonymous"></script>
-    <!-- Link Favicon ** -->
-    <link rel="shortcut icon" href="../chamber/images/favicon.ico" type="image/x-icon">
-    <title>Sacramento Chamber of Commerce</title>
-
-</head>
-
 <body>
     <header>
         <!-- Logo Img-->
-        <a href="index.html">
+        <a href="..chamber/index.html" target="_blank">
             <picture>
                 <img class="heading-logo" src="../chamber/images/sac-coc-logo.webp" alt="Logo image">
             </picture>
         </a>
         <!-- Heading -->
         <h1 class="headings">
-            <a href="index.html">
-                Sacramento
-                <span>Chamber of Commerce</span>
-            </a>
+            Sacramento
+            <span>Chamber of Commerce</span>
         </h1>
 
         <!-- Social Media -->
@@ -183,5 +153,3 @@
 
     <script src="../chamber/scripts/index.js"></script>
 </body>
-
-</html>

@@ -23,7 +23,7 @@ let currYear = d.getFullYear();
 const lastModif = document.lastModified;
 
 year.innerHTML = `&copy; ${currYear}`
-dateModif.innerHTML= `Last Modified ${lastModif}`;
+dateModif.innerHTML = `Last Modified ${lastModif}`;
 
 
 
