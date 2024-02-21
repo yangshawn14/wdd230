@@ -13,6 +13,48 @@ hamButton.addEventListener('click', () => {
 	hamButton.classList.toggle('open');
 });
 
+// Display number of visits on Discover Page
+// 1️⃣ Initialize display element variable
+const visitMessage = document.querySelector("#visit-message");
+
+// 2️⃣ Get the stored visit date from localStorage
+const lastVisit = localStorage.getItem('lastVisit');
+
+// Get the current date
+const currentDate = new Date();
+
+if (lastVisit === null) {
+	// If there's no last visit date, set the current date as the last visit date
+	localStorage.setItem('lastVisit', currentDate.toISOString());
+
+	// Display a welcome message
+	visitMessage.textContent = "Welcome! Let us know if you have any questions.";
+} else {
+	// Convert last visit date from string to Date object
+	const lastVisitDate = new Date(lastVisit);
+
+	// Calculate the difference in milliseconds between the current visit and the last visit
+	const timeDifference = currentDate - lastVisitDate;
+
+	// Convert milliseconds to days
+	const daysDifference = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
+
+	if (daysDifference < 1) {
+		// If the difference is less than a day, display "Back so soon! Awesome!"
+		visitMessage.textContent = "Back so soon! Awesome!";
+	} else if (daysDifference === 1) {
+		// If the difference is exactly 1 day, display "You last visited 1 day ago."
+		visitMessage.textContent = "You last visited 1 day ago.";
+	} else {
+		// Otherwise, display the number of days in a message
+		visitMessage.textContent = `You last visited ${daysDifference} days ago.`;
+	}
+}
+
+// 3️⃣ Store the new visit date into localStorage
+localStorage.setItem('lastVisit', currentDate.toISOString());
+
+
 // Footer
 let dateModif = document.querySelector("#dateModif");
 let year = document.querySelector("#year");
