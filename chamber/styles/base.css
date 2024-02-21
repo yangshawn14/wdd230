@@ -294,10 +294,26 @@ main {
 }
 
 /**** DISCOVER PAGE ****/
+.discover {
+    text-align: center;
+    line-height: 1.25rem;
+}
+
 .visits {
     background-color: var(--primary-color);
     padding: 1px;
     text-align: center;
+}
+
+#demographics img {
+    width: 90%;
+    border-radius: 50%;
+    margin-top: 10px;
+    margin-left: 18.5px;
+}
+
+.discover img {
+    width: 100%;
 }
 
 footer {
