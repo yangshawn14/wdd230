@@ -97,6 +97,23 @@
          grid-template-columns: repeat(4, 1fr);
      }
 
+     /**** DISCOVER PAGE ****/
+     .discover {
+         display: grid;
+         grid-template-columns: 1fr 3fr;
+         grid-template-rows: repeat(6, 1fr);
+         column-gap: 10px;
+     }
+
+     .attractions {
+         display: flex;
+         flex-direction: column;
+     }
+
+     .attraction {
+         grid-column: 2/3;
+     }
+
      footer {
          display: block;
      }
