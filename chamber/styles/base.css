@@ -293,6 +293,13 @@ main {
     display: none;
 }
 
+/**** DISCOVER PAGE ****/
+.visits {
+    background-color: var(--primary-color);
+    padding: 1px;
+    text-align: center;
+}
+
 footer {
     background-color: var(--primary-color);
     /* display: flex;
