@@ -69,8 +69,8 @@
 
      .item5 {
          grid-area: item5;
-         display: grid;
-         grid-template-columns: 1fr 1fr;
+         /* display: grid;
+         grid-template-columns: 1fr 1fr; */
      }
 
      .item6 {
@@ -86,15 +86,15 @@
 
      .grid-container {
          display: grid;
-
-
          grid-template-areas:
-             'item1 item1 item1'
-             'item4 item4 item4'
-             ' item5 item5 item5'
-             'item6 item6 item6'
-             'item2 item2 item3';
-
+             'item2 item1 item1 item5'
+             'item2 item1 item1 item5'
+             'item3 item1 item1 item5'
+             'item3 item1 item1 item5'
+             'item6 item4 item4 item5'
+             'item6 item4 item4 item5';
+         grid-template-rows: repeat(6, 1fr);
+         grid-template-columns: repeat(4, 1fr);
      }
 
      footer {
