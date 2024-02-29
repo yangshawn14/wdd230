@@ -5,11 +5,75 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Form</title>
+    <link rel="stylesheet" href="../styles/base.css">
+    <link rel="stylesheet" href="../styles/larger.css">
     <link rel="stylesheet" href="styles/form.css">
 </head>
 
 <body>
+    <header>
+        <img src="../images/pic-of-me.webp" alt="Picture of Shawn Yang">
+        <h1>Shawn Yang</h1>
+    </header>
+    <nav>
+        <button id="menu"></button>
+        <ul>
+            <li><a href="../chamber/siteplan.html">Site Plan</a></li>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../chamber/index.html">Chamber</a></li>
+            <li><a href="https://www.byui.edu/" target="_blank">BYU-Idaho</a></li>
+            <li><a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/3-ne/9?lang=eng" target="_blank"
+                    rel="3 Nephi 9:14">Scripture</a></li>
+        </ul>
+    </nav>
+    <main>
+        <form action="record.html" method="get">
+            <div class="form-group">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" pattern="[a-zA-Z0-9]{8,}"
+                    placeholder="Password must be at least 8 characters long and can only be alpha-numeric" required>
+            </div>
+            <div class="form-group">
+                <label for="confirm-password">Confirm Password:</label>
+                <input type="password" id="confirm-password" name="confirm-password" required
+                    oninput="validatePassword()">
+                <p id="password-error" class="error-message"></p>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required pattern=".+@byui\.edu$"
+                    title="Please enter a valid email address">
+            </div>
+            <div class="form-group">
+                <label for="page-rating">Page Rating:</label>
+                <input type="range" id="page-rating" name="page-rating" min="1" max="10" step="1">
+                <output for="page-rating" id="rating-value">5</output>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+    </main>
+    <footer>
+        <div id="base-footer">
+            <div>
+                <p>
+                    &#169;
+                    <span id="year"></span>
+                </p>
+                <p class="seperator"> .:|:. </p>
+                <p> Shawn Yang </p>
+                <p class="seperator"> .:|:. </p>
+                <p>Idaho</p>
+            </div>
+            <p id="lastModified"></p>
+        </div>
+    </footer>
 
+    <script src="scripts/form.js"></script>
+    <script src="../scripts/getdates.js"></script>
 </body>
 
 </html>

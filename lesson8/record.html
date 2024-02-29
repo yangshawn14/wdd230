@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Submission Confirmation</title>
+    <link rel="stylesheet" href="styles/form.css">
+</head>
+
+<body>
+    <div class="confirmation">
+        <h2>Form Submission Confirmation</h2>
+        <p>Thank you for submitting the form!</p>
+        <!-- Display submitted form data -->
+        <div class="submitted-data" id="submittedData">
+            <h3>Submitted Data:</h3>
+        </div>
+    </div>
+
+    <script>
+        // Function to parse URL parameters and retrieve form data
+        function getUrlParameters() {
+            var params = {};
+            var queryString = window.location.search.substring(1);
+            var pairs = queryString.split('&');
+            for (var i = 0; i < pairs.length; i++) {
+                var pair = pairs[i].split('=');
+                params[decodeURIComponent(pair[0])] = decodeURIComponent(pair[1]);
+            }
+            return params;
+        }
+
+        // Function to display form data
+        // Function to display form data
+        function displayFormData() {
+            var submittedDataDiv = document.getElementById('submittedData');
+            var formData = getUrlParameters();
+            for (var key in formData) {
+                if (formData.hasOwnProperty(key)) {
+                    var pElement = document.createElement('p');
+                    if (key === 'page-rating') {
+                        // If the key is 'page-rating', subtract one from the value
+                        pElement.innerHTML = '<strong>' + key + ':</strong> ' + (parseInt(formData[key]) - 1);
+                    } else {
+                        pElement.innerHTML = '<strong>' + key + ':</strong> ' + formData[key];
+                    }
+                    submittedDataDiv.appendChild(pElement);
+                }
+            }
+        }
+
+
+        // Call the function to display form data when the page loads
+        window.onload = function () {
+            displayFormData();
+        };
+    </script>
+    </div>
+</body>
+
+</html>

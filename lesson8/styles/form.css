@@ -1,0 +1,116 @@
+/* Apply CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Define CSS variables */
+:root {
+    --primary-color: #007bff;
+    /* Primary color */
+    --error-color: red;
+    /* Error color */
+    --shadow-color: rgba(0, 0, 0, 0.1);
+    /* Box shadow color */
+}
+
+/* Body Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+
+/* Form Styles */
+form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 2px 4px var(--shadow-color);
+    /* Use shadow color variable */
+}
+
+form input:required {
+    border-left: var(--error-color) solid 6px;
+    /* Use error color variable */
+}
+
+form input:required:valid {
+    border-left: green solid 6px;
+}
+
+/* Form Group Styles */
+.form-group {
+    margin-bottom: 20px;
+}
+
+/* Label Styles */
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+/* Input Styles */
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="range"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-top: 5px;
+}
+
+input[type="range"] {
+    padding: 0;
+}
+
+/* Error Message Styles */
+.error-message {
+    color: var(--error-color);
+    /* Use error color variable */
+    margin-top: 5px;
+}
+
+/* Button Styles */
+button[type="submit"] {
+    background-color: var(--primary-color);
+    /* Use primary color variable */
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/*------------ Record --------------*/
+.confirmation {
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 600px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.submitted-data {
+    margin-top: 20px;
+}
+
+.submitted-data h3 {
+    margin-bottom: 10px;
+}
+
+.submitted-data p {
+    margin-bottom: 5px;
+}
