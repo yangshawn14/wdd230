@@ -55,6 +55,10 @@
          grid-area: item1;
      }
 
+     .cta {
+         padding-top: 15px;
+     }
+
      .item2 {
          grid-area: item2;
      }

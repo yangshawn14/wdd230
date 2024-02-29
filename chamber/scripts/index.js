@@ -13,6 +13,18 @@ hamButton.addEventListener('click', () => {
 	hamButton.classList.toggle('open');
 });
 
+// Footer
+let dateModif = document.querySelector("#dateModif");
+let year = document.querySelector("#year");
+
+const d = new Date();
+let currYear = d.getFullYear();
+
+const lastModif = document.lastModified;
+
+year.innerHTML = `&copy; ${currYear}`
+dateModif.innerHTML = `Last Modified ${lastModif}`;
+
 // Display number of visits on Discover Page
 // 1️⃣ Initialize display element variable
 const visitMessage = document.querySelector("#visit-message");
@@ -55,17 +67,7 @@ if (lastVisit === null) {
 localStorage.setItem('lastVisit', currentDate.toISOString());
 
 
-// Footer
-let dateModif = document.querySelector("#dateModif");
-let year = document.querySelector("#year");
 
-const d = new Date();
-let currYear = d.getFullYear();
-
-const lastModif = document.lastModified;
-
-year.innerHTML = `&copy; ${currYear}`
-dateModif.innerHTML = `Last Modified ${lastModif}`;
 
 
 
