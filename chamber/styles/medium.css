@@ -170,4 +170,25 @@
      #dateModif {
          margin: 0;
      }
+
+     /*------ Join Page ------*/
+     .join {
+         display: grid;
+         grid-template-columns: 1fr 1fr;
+         grid-gap: 5px;
+     }
+
+     form {
+         order: 2;
+     }
+
+     aside {
+         order: 1;
+     }
+
+     /*-------- Thank You Page -------*/
+     .thankyou {
+         text-align: center;
+         margin: 0 auto;
+     }
  }

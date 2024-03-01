@@ -76,8 +76,29 @@ if (lastVisit === null) {
 // 3️⃣ Store the new visit date into localStorage
 localStorage.setItem('lastVisit', currentDate.toISOString());
 
+/*********************
+ * Join Page 
+ *********************/
+// Get current date time
+document.getElementById('form-load-time').value = Date.now();
 
+// Validate password
+document.getElementById('confirm-password').addEventListener('focusout', function () {
+	validatePassword();
+});
 
+function validatePassword() {
+	const password = document.getElementById('password').value;
+	const confirmPassword = document.getElementById('confirm-password').value;
+	const errorElement = document.getElementById('password-error');
+
+	if (confirmPassword && password !== confirmPassword) {
+		errorElement.textContent = "Passwords do not match";
+		document.getElementById('confirm-password').focus();
+	} else {
+		errorElement.textContent = '';
+	}
+}
 
 
 
