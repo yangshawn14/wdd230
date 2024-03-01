@@ -2,7 +2,7 @@
 
      .headings {
          grid-column: 2 / 4;
-         grid-row: 1/2;
+         /* grid-row: 1/2; */
      }
 
      .headings a {
@@ -12,7 +12,7 @@
      .nav-social {
          flex-direction: row;
          grid-column: 6 / 8;
-         grid-row: 1 / 2;
+         /* grid-row: 1 / 2; */
      }
 
      .nav-social li a {
@@ -29,7 +29,7 @@
 
      nav {
          grid-column: 8 / 14;
-         grid-row: 1 / 2;
+         /* grid-row: 1 / 2; */
 
      }
 
@@ -44,6 +44,12 @@
      .navigation li {
          align-items: center;
          justify-content: center;
+     }
+
+     /*------ Dark Mode ------*/
+     .dark-mode-btn {
+         grid-column: 11/13;
+         margin-left: 20px;
      }
 
      #currDate {
