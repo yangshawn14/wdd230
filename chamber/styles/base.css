@@ -176,6 +176,11 @@ section:not(section.headings) {
     background-color: var(--secondary-color);
 }
 
+section,
+.spotlight {
+    border-radius: 6px;
+}
+
 /*------ Dark Mode ------*/
 .dark-mode {
     background-color: var(--dark-mode);
