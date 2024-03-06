@@ -317,6 +317,7 @@ main {
     grid-row: 1/2;
     justify-self: center;
     align-self: center;
+    border-radius: 6px;
 }
 
 .cta {
@@ -326,13 +327,14 @@ main {
     justify-self: center;
     text-decoration: none;
     border: solid 1px;
-    padding-top: 3px;
-    border-radius: 15%;
+    padding: 7px 5px 5px;
+    border-radius: 15px;
     background-color: rgba(var(--accent2-color-rgb), 0.65);
 }
 
 .cta:hover {
     background-color: var(--nav-hover-background-color);
+    color: black;
 }
 
 
@@ -347,6 +349,10 @@ main {
 /* .item2 h2 {
     margin-bottom: 0;
 } */
+
+.item4 {
+    display: none;
+}
 
 .wrapper {
     display: grid;
@@ -385,8 +391,17 @@ main {
     display: inline-block;
 }
 
-.item6 h2 {
+.item6 {
     display: none;
+}
+
+#join-btn {
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 6px;
+    padding: 5px;
+    margin: auto;
+    width: 10rem;
 }
 
 /**** DISCOVER PAGE ****/
