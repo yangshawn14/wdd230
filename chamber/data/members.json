@@ -1,0 +1,175 @@
+{
+    "companies": [
+        {
+            "name": "Sacramento Specialty Automotive",
+            "description": "Delivering honest and professional automotive repair",
+            "phone": "(916) 619-5088",
+            "email": "serviceteam@sacautorepair.com",
+            "website": "https://sacramentoautorepair.com/",
+            "image": "sac_auto.jpg",
+            "membership_level": "Gold"
+        },
+        {
+            "name": "Butcher and Barrel",
+            "description": "An elevated dining experience",
+            "phone": "(916) 476-3408",
+            "email": "info@butcherandbarrelsac.com",
+            "website": "https://www.butcherandbarrelsac.com/",
+            "image": "butcher_barrel.jpg",
+            "membership_level": "Silver"
+        },
+        {
+            "name": "916 Ink",
+            "description": "We're looking for the next youth poet laureate!",
+            "phone": "(916) 826-7323",
+            "email": "info@916ink.org",
+            "website": "https://www.916ink.org/",
+            "image": "916_ink.jpg",
+            "membership_level": "Bronze"
+        },
+        {
+            "name": "Sacramento Coffee Roasters",
+            "description": "Crafting the perfect cup of coffee since 1995",
+            "phone": "(916) 555-1234",
+            "email": "info@sacroasters.com",
+            "website": "https://www.sacroasters.com/",
+            "image": "sac_coffee.jpg",
+            "membership_level": "Bronze"
+        },
+        {
+            "name": "River City Brewery",
+            "description": "Award-winning craft beers in the heart of Sacramento",
+            "phone": "(916) 555-5678",
+            "email": "contact@rivercitybrewery.com",
+            "website": "https://www.rivercitybrewery.com/",
+            "image": "river_city_brewery.jpg",
+            "membership_level": "Gold"
+        },
+        {
+            "name": "Sacramento Sports Medicine",
+            "description": "Leading the way in sports injury treatment and prevention",
+            "phone": "(916) 555-9876",
+            "email": "info@sacsportsmed.com",
+            "website": "https://www.sacsportsmed.com/",
+            "image": "sac_sports_med.jpg",
+            "membership_level": "Silver"
+        },
+        {
+            "name": "Capital City Real Estate",
+            "description": "Your trusted partner in Sacramento real estate",
+            "phone": "(916) 555-3456",
+            "email": "info@capcityrealestate.com",
+            "website": "https://www.capcityrealestate.com/",
+            "image": "cap_city_real_estate.jpg",
+            "membership_level": "Bronze"
+        },
+        {
+            "name": "Sacramento Legal Associates",
+            "description": "Providing expert legal counsel and representation",
+            "phone": "(916) 555-7890",
+            "email": "info@saclegal.com",
+            "website": "https://www.saclegal.com/",
+            "image": "sac_legal.jpg",
+            "membership_level": "Silver"
+        },
+        {
+            "name": "Downtown Yoga Studio",
+            "description": "Find your balance and peace in the heart of downtown",
+            "phone": "(916) 555-2345",
+            "email": "info@downtownyoga.com",
+            "website": "https://www.downtownyoga.com/",
+            "image": "downtown_yoga.jpg",
+            "membership_level": "Bronze"
+        },
+        {
+            "name": "Sacramento Pet Grooming",
+            "description": "Expert grooming services for your furry friends",
+            "phone": "(916) 555-6789",
+            "email": "info@sacpetgrooming.com",
+            "website": "https://www.sacpetgrooming.com/",
+            "image": "sac_pet_grooming.jpg",
+            "membership_level": "Bronze"
+        },
+        {
+            "name": "Capital City Fitness",
+            "description": "Achieve your fitness goals with personalized training",
+            "phone": "(916) 555-4567",
+            "email": "info@capcityfitness.com",
+            "website": "https://www.capcityfitness.com/",
+            "image": "cap_city_fitness.jpg",
+            "membership_level": "Silver"
+        },
+        {
+            "name": "Sacramento Tech Solutions",
+            "description": "Your partner in IT support and solutions",
+            "phone": "(916) 555-3456",
+            "email": "info@sactechsolutions.com",
+            "website": "https://www.sactechsolutions.com/",
+            "image": "sac_tech_solutions.jpg",
+            "membership_level": "Gold"
+        },
+        {
+            "name": "Riverfront Art Gallery",
+            "description": "Showcasing local and contemporary art",
+            "phone": "(916) 555-8901",
+            "email": "info@riverfrontgallery.com",
+            "website": "https://www.riverfrontgallery.com/",
+            "image": "riverfront_gallery.jpg",
+            "membership_level": "Bronze"
+        },
+        {
+            "name": "Midtown Music Academy",
+            "description": "Nurturing musical talent and creativity",
+            "phone": "(916) 555-1234",
+            "email": "info@midtownmusic.com",
+            "website": "https://www.midtownmusic.com/",
+            "image": "midtown_music.jpg",
+            "membership_level": "Silver"
+        },
+        {
+            "name": "Sacramento Bookstore",
+            "description": "Your local source for books and literary events",
+            "phone": "(916) 555-5678",
+            "email": "info@sacbookstore.com",
+            "website": "https://www.sacbookstore.com/",
+            "image": "sac_bookstore.jpg",
+            "membership_level": "Bronze"
+        },
+        {
+            "name": "Capitol City Cafe",
+            "description": "A cozy cafe serving gourmet coffee and pastries",
+            "phone": "(916) 555-9876",
+            "email": "info@capitolcitycafe.com",
+            "website": "https://www.capitolcitycafe.com/",
+            "image": "capitol_city_cafe.jpg",
+            "membership_level": "Gold"
+        },
+        {
+            "name": "Sacramento Wellness Center",
+            "description": "Holistic health and wellness solutions for your well-being",
+            "phone": "(916) 555-3456",
+            "email": "info@sacwellness.com",
+            "website": "https://www.sacwellness.com/",
+            "image": "sac_wellness.jpg",
+            "membership_level": "Silver"
+        },
+        {
+            "name": "Downtown Sacramento Florist",
+            "description": "Bringing beauty and elegance to your special occasions",
+            "phone": "(916) 555-7890",
+            "email": "info@downtownflorist.com",
+            "website": "https://www.downtownflorist.com/",
+            "image": "downtown_florist.jpg",
+            "membership_level": "Bronze"
+        },
+        {
+            "name": "Capital City Marketing Agency",
+            "description": "Strategic marketing solutions for businesses of all sizes",
+            "phone": "(916) 555-2345",
+            "email": "info@capcitymarketing.com",
+            "website": "https://www.capcitymarketing.com/",
+            "image": "cap_city_marketing.jpg",
+            "membership_level": "Gold"
+        }
+    ]
+}

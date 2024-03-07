@@ -22,7 +22,7 @@
     <script src="https://kit.fontawesome.com/ee740aab1a.js" crossorigin="anonymous"></script>
     <!-- Link Favicon ** -->
     <link rel="shortcut icon" href="../chamber/images/favicon.ico" type="image/x-icon">
-    <title>Sacramento Chamber of Commerce</title>
+    <title>Directory</title>
 
 </head>
 
@@ -80,86 +80,14 @@
         <p id="currDate"></p>
 
     </header>
+    <main class="directory">
 
-    <main class="grid-container">
+        <button id="grid-view-btn">Grid View</button>
+        <button id="list-view-btn">List View</button>
+        <div class="members-container grid-view">
+            <!-- Members will be dynamically added here -->
+        </div>
 
-        <!-- Hero and Call to Action -->
-        <section class="item1">
-            <h2>Welcome to Sacramento</h2>
-            <picture class="hero">
-                <source media="(min-width: 500px)" srcset="images/sacramento-small.webp">
-                <source media="(min-width: 1000px)" srcset="images/sacramento-medium.webp">
-                <img src="images/sacramento-large.webp" alt="picture of Sacramento">
-            </picture>
-            <a href="join.html" target="_blank" class="cta">Join the Chamber</a>
-        </section>
-
-        <!-- Event -->
-        <section class="item2">
-            <h2>Event</h2>
-            <hr>
-            <h3>Coffee Connect</h3>
-            <p>Join us for a casual coffee with fellow Chamber members and prospective members alike!</p>
-        </section>
-
-        <!-- Weather -->
-        <section class="item3">
-            <h2>Weather</h2>
-            <hr>
-            <h4>Temperature: <span id="temp">40</span>°F</h4>
-            <h4>Wind speed: <span id="wind-speed">3</span>mph</h4>
-            <h4>Wind Chill: <span id="windchill"></span></h4>
-
-        </section>
-
-        <!-- New Release -->
-        <section class="item4">
-            <h2>Unleash Your Potential in Sacramento!</h2>
-            <hr>
-            <p>Embark on a journey of growth and prosperity with the Sacramento Chamber of Commerce. As the gateway to
-                opportunity in our dynamic city, we're here to support your aspirations and elevate your business.
-                Discover the vibrant pulse of Sacramento's business landscape, where innovation meets tradition and
-                dreams take flight. Join us in shaping a brighter future for Sacramento, where every idea finds its
-                voice and every endeavor finds its success!</p>
-        </section>
-
-        <!-- Spotlights -->
-        <section class="item5">
-            <h2>Member Spotlights</h2>
-            <hr>
-            <div class="wrapper">
-                <div class="spotlight">
-                    <h3>🚗 Sacramento Specialty Automotive</h3>
-                    <p>"Delivering honest and professional automotive repair"</p>
-                    <p>(916)619-5088</p>
-                    <p>serviceteam@sacautorepair.com</p>
-                    <a href="https://sacramentoautorepair.com/">Website</a>
-                </div>
-                <div class="spotlight">
-                    <h3>🥩 Butcher and Barrel</h3>
-                    <p>"An elevated dining experience"</p>
-                    <p>(916)476-3408</p>
-                    <p>info@butcherandbarrelsac.com</p>
-                    <a href="https://www.butcherandbarrelsac.com/">Website</a>
-                </div>
-                <div class="spotlight">
-                    <h3>📖 916 Ink</h3>
-                    <p>"We're looking for the next youth poet laureate!"</p>
-                    <p>(916)826-7323</p>
-                    <p>info@916ink.org</p>
-                    <a href="https://www.916ink.org/">Website</a>
-                </div>
-            </div>
-        </section>
-
-        <!-- Join -->
-        <section class="item6">
-            <h2>Join the Chamber</h2>
-            <hr>
-            <a href="join.html"><input type="button" value="Join Us!" name="join" id="join-btn"></a>
-            <p>Joining the chamber unlocks exclusive networking opportunities, valuable resources, and a supportive
-                community committed to propelling your success forward.</p>
-        </section>
 
     </main>
 
@@ -207,8 +135,8 @@
         </div>
     </footer>
 
-    <script src="scripts/index.js"></script>
-    <script src="scripts/windchill.js"></script>
+    <script src="../chamber/scripts/index.js"></script>
+    <script src="scripts/directory.js"></script>
 </body>
 
 </html>
