@@ -281,7 +281,7 @@ i {
     margin: 10px;
 }
 
-main {
+main:not(.directory) {
     display: flex;
     flex-direction: column;
     padding: 5px;
@@ -526,15 +526,21 @@ aside ul li {
 }
 
 /*------ Directory Page ------*/
+/* Common styles for all screen sizes */
 .directory {
     max-width: 960px;
     margin: 0 auto;
     padding: 20px;
 }
 
+.directory-button {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
 button {
     margin-right: 10px;
-    padding: 8px 16px;
+    padding: 2px;
     border: none;
     border-radius: 4px;
     background-color: #007bff;
@@ -542,18 +548,56 @@ button {
     cursor: pointer;
 }
 
+i {
+    font-size: 1.5rem;
+}
+
 .members-container {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 10px;
+    max-width: 960px;
+    margin: 0 auto;
 }
 
 .member-card {
-    width: calc(33.33% - 20px);
-    margin: 10px;
+    /* Adjust styles as needed */
     padding: 15px;
     border: 1px solid #ccc;
     border-radius: 5px;
     background-color: #f9f9f9;
+    overflow: hidden;
+    /* Prevent content overflow */
+}
+
+.websiteURL {
+    color: #001a2c;
+    display: block;
+    /* Ensure URLs are displayed as block elements */
+    white-space: nowrap;
+    /* Prevent wrapping of URL text */
+    overflow: hidden;
+    /* Hide any overflow */
+    text-overflow: ellipsis;
+    /* Display ellipsis (...) for overflowed text */
+    padding-bottom: 3px;
+}
+
+.websiteURL::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: 0;
+    height: 3px;
+    background: linear-gradient(90deg, transparent, var(--nav-hover-link-color), transparent);
+    transition: width 0.5s ease, left 0.5s ease;
+}
+
+.websiteURL:hover::before {
+    width: 100%;
+    left: 0;
+    right: 0;
 }
 
 .member-list {
@@ -566,6 +610,9 @@ button {
 }
 
 
+
+
+/*----- Footer -----*/
 footer {
     background-color: var(--primary-color);
     /* display: flex;

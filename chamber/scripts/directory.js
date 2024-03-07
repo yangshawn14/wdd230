@@ -1,6 +1,8 @@
 /*********************
  * Directory Page 
  *********************/
+
+const membersURL = "https://yangshawn14.github.io/wdd230/chamber/data/members.json";
 document.addEventListener("DOMContentLoaded", function () {
     const gridViewBtn = document.getElementById("grid-view-btn");
     const listViewBtn = document.getElementById("list-view-btn");
@@ -19,7 +21,7 @@ document.addEventListener("DOMContentLoaded", function () {
     // Function to fetch JSON data
     async function fetchMemberData() {
         try {
-            const response = await fetch("data/members.json");
+            const response = await fetch(membersURL);
             const data = await response.json();
             console.log(data.companies)
             return data.companies;
@@ -38,11 +40,13 @@ document.addEventListener("DOMContentLoaded", function () {
             memberElement.classList.add("member-card");
 
             memberElement.innerHTML = `
-                <h3>${member.name}</h3>
-                <p>${member.description}</p>
-                <p>Phone: ${member.phone}</p>
-                <p>Email: ${member.email}</p>
-                <a href="${member.website}" target="_blank">Website</a>
+            <h3>${member.name}</h3>
+            <p>Description: ${member.description}</p>
+            <p>Phone: ${member.phone}</p>
+            <p>Email: ${member.email}</p>
+            <p>Membership Level: ${member.membership_level}</p>
+            <p>Website: <a href="${member.website}" target="_blank" class="websiteURL">${member.website}</a></p>
+            <img src="${member.image}" alt="${member.name}">
             `;
 
             membersContainer.appendChild(memberElement);
