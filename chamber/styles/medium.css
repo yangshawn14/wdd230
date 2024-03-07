@@ -195,4 +195,13 @@
          text-align: center;
          margin: 0 auto;
      }
+
+     /*------ Directory Page ------*/
+     /* List view */
+     .members-container.list-view .member-card {
+         flex-direction: row;
+         align-items: flex-start;
+         justify-content: space-evenly;
+     }
+
  }

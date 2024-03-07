@@ -7,6 +7,8 @@ document.addEventListener("DOMContentLoaded", function () {
     const gridViewBtn = document.getElementById("grid-view-btn");
     const listViewBtn = document.getElementById("list-view-btn");
     const membersContainer = document.querySelector(".members-container");
+    const main = document.querySelector(".directory");
+    const memberCard = document.querySelector(".member-card");
 
     gridViewBtn.addEventListener("click", function () {
         membersContainer.classList.remove("list-view");
@@ -16,6 +18,8 @@ document.addEventListener("DOMContentLoaded", function () {
     listViewBtn.addEventListener("click", function () {
         membersContainer.classList.remove("grid-view");
         membersContainer.classList.add("list-view");
+        main.classList.add("list-view");
+        memberCard.classList.add("list-view");
     });
 
     // Function to fetch JSON data
@@ -34,20 +38,25 @@ document.addEventListener("DOMContentLoaded", function () {
     async function populateMembers() {
         const members = await fetchMemberData();
         membersContainer.innerHTML = "";
-        members.forEach(function (member) {
+        members.forEach(function (member, index) {
             const memberElement = document.createElement("div");
             memberElement.classList.add("member-card");
 
             memberElement.innerHTML = `
-            <h3>${member.name}</h3>
-            <p>Description: ${member.description}</p>
-            <p>Phone: ${member.phone}</p>
-            <p>Email: ${member.email}</p>
-            <p>Membership Level: ${member.membership_level}</p>
-            <p>Website: <a href="${member.website}" target="_blank" class="websiteURL">${member.website}</a></p>
             <img src="${baseURL}${member.image}" alt="${member.name}">
+            <h3>${member.name}</h3>
+            <p>${member.phone}</p>
+            <p>${member.email}</p>
+            <p><a href="${member.website}" target="_blank" class="websiteURL">${member.website}</a></p>
             `;
-            console.log(baseURL + member.image)
+
+            // Alternating background colors
+            if (index % 2 === 0) {
+                memberElement.classList.add("even");
+            } else {
+                memberElement.classList.add("odd");
+            }
+
             membersContainer.appendChild(memberElement);
         });
 

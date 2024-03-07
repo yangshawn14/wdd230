@@ -526,9 +526,8 @@ aside ul li {
 }
 
 /*------ Directory Page ------*/
-/* Common styles for all screen sizes */
 .directory {
-    max-width: 960px;
+    max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
 }
@@ -552,7 +551,7 @@ i {
     font-size: 1.5rem;
 }
 
-.members-container {
+.members-container.grid-view {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     grid-gap: 10px;
@@ -567,7 +566,15 @@ i {
     border-radius: 5px;
     background-color: #f9f9f9;
     overflow: hidden;
-    /* Prevent content overflow */
+    display: grid;
+    grid-template-rows: 300px;
+    align-items: center;
+}
+
+.member-card img {
+    width: 100%;
+    height: auto;
+    max-width: 280px;
 }
 
 .websiteURL {
@@ -608,6 +615,44 @@ i {
 .member-list-item {
     margin-bottom: 10px;
 }
+
+/* List view */
+.members-container.list-view .member-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: none;
+    margin: 0;
+    padding: .5rem;
+    border: none;
+}
+
+.members-container.list-view .member-card:nth-child(odd) {
+    background-color: rgba(247, 150, 15, 0.2);
+}
+
+.members-container.list-view .member-card a {
+    display: block;
+}
+
+.members-container.list-view .member-card img {
+    display: none;
+}
+
+.members-container.list-view .member-card .websiteURL {
+    display: block;
+}
+
+.members-container.list-view .member-card p.description {
+    display: none;
+}
+
+.members-container.list-view .member-card h3 {
+    text-transform: capitalize;
+    font-size: .9rem;
+}
+
+
 
 
 
