@@ -17,7 +17,7 @@ const displayLinks = (weeks) => {
 
         week.links.forEach(link => {
             const linkElement = document.createElement('a');
-            linkElement.href = `${baseURL}${link.url}`;
+            linkElement.href = link.url.startsWith('https') ? link.url : `${baseURL}${link.url}`;
             linkElement.textContent = `${link.title}`;
 
             const separator = document.createTextNode(' | ');
