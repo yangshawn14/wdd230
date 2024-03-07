@@ -1,0 +1,143 @@
+{
+    "lessons": [
+        {
+            "lesson": "01",
+            "links": [
+                {
+                    "url":"lesson1/holygrail.html",
+                    "title":"Holy Grail"
+                }
+            ]
+        },
+
+        {
+            "lesson": "02",
+            "links": [
+                {
+                    "url":"lesson1/media-query.html",
+                    "title":"Media Query"
+                },
+                {
+                    "url": "lesson1/design-principles.html",
+                    "title": "Design Principles Document"
+                }
+            ]
+        },
+
+        {
+            "lesson": "03",
+            "links": [
+                {
+                    "url":"lesson3/images/CSS-combinators.png",
+                    "title":"CSS Combinators"
+                },
+                {
+                    "url":"https://codepen.io/yangshawn14/pen/poqQPEo?editors=0100",
+                    "title":"Responsive Menu"
+                },
+                {
+                    "url":"https://codepen.io/yangshawn14/pen/eYbQWWz?editors=0100",
+                    "title":"Pseudo Elements"
+                },
+                {
+                    "url":"lesson3/index.html",
+                    "title":"Chamber Site Plan"
+                }
+            ]
+        },
+
+        {
+            "lesson": "04",
+            "links": [
+                {
+                    "url":"https://codepen.io/yangshawn14/pen/wvRZWYb?editors=0100",
+                    "title":"Pseudo Classes"
+                },
+                {
+                    "url":"chamber/index.html",
+                    "title":"Chamber Home Page"
+                }
+            ]
+        },
+
+        {
+            "lesson": "05",
+            "links": [
+                {
+                    "url":"lesson5/bom.html",
+                    "title":"BoM Favorite Chapters"
+                },
+                {
+                    "url":"chamber/index.html",
+                    "title":"Chamber Home Page Continued"
+                }
+            ]
+        },
+
+        {
+            "lesson": "06",
+            "links": [
+                {
+                    "url":"lesson6/images/landscape.webp",
+                    "title":"WebP"
+                },
+                {
+                    "url":"lesson6/responsive-images.html",
+                    "title":"Responsive Images"
+                }
+            ]
+        },
+
+        {
+            "lesson": "07",
+            "links": [
+                {
+                    "url":"lesson7/lazyload.html",
+                    "title":"Lazy Loading"
+                },
+                {
+                    "url":"lesson7/bomlocal/bomlocal.html",
+                    "title":"BoM Local Storage"
+                }
+            ]
+        },
+
+        {
+            "lesson": "08",
+            "links": [
+                {
+                    "url":"lesson8/tablebuild.html",
+                    "title":"HTML Tables"
+                },
+                {
+                    "url":"lesson8/index.html",
+                    "title":"Web Forms"
+                },
+                {
+                    "url":"lesson8/form.html",
+                    "title":"HTML Form Build"
+                }
+            ]
+        },
+
+        {
+            "lesson": "09",
+            "links": [
+                {
+                    "url":"lesson9/new-ward-members.json",
+                    "title":"JSON"
+                }
+            ]
+        },
+
+        {
+            "lesson": "10",
+            "links": [
+                {
+                    "url":"lesson10/",
+                    "title":"Lesson"
+                }
+            ]
+        }
+    ]
+}
