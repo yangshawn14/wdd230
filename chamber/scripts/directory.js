@@ -45,7 +45,7 @@ document.addEventListener("DOMContentLoaded", function () {
             <p>Email: ${member.email}</p>
             <p>Membership Level: ${member.membership_level}</p>
             <p>Website: <a href="${member.website}" target="_blank" class="websiteURL">${member.website}</a></p>
-            <img src="${baseURL}${member.image}" alt="${member.name}">
+            <img src="${member.image}" alt="${member.name}">
             `;
             console.log(baseURL + member.image)
             membersContainer.appendChild(memberElement);
