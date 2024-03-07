@@ -1,0 +1,15 @@
+body {
+    text-align: center;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
+    gap: 2px;
+}
+
+section {
+    border: solid 1px grey;
+    border-radius: 6px;
+    background-color: burlywood;
+}
