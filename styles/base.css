@@ -6,10 +6,12 @@ body {
     margin: 0 auto;
 }
 
-header, footer, h3 {
+header,
+footer,
+h3 {
     background-color: #ECF9FF;
     /* margin: 3.5rem; */
-    
+
 
 }
 
@@ -17,7 +19,7 @@ header {
     display: grid;
     grid-template-columns: auto 1fr;
     margin-bottom: 0;
-    
+
 }
 
 footer {
@@ -33,13 +35,13 @@ nav {
 
 #menu {
     font-size: 1.25rem;
-    border: 1px solid rgba(0,0,0,.3);
-	padding: 3px 7px 6px;
-	background-color: #eee;
-	color: #000;
- 	position: absolute;
-	top: 1em;
-	right: 1em;
+    border: 1px solid rgba(0, 0, 0, .3);
+    padding: 3px 7px 6px;
+    background-color: #eee;
+    color: #000;
+    position: absolute;
+    top: 1em;
+    right: 1em;
 }
 
 #menu::before {
@@ -55,7 +57,7 @@ nav ul {
     text-align: center;
     margin: 0;
     padding: 0;
-    
+
 }
 
 nav li {
@@ -83,9 +85,9 @@ nav a:hover {
 }
 
 /* Psuedo-element factor */
-p.weather::before {
+/* p.weather::before {
     content: "🌧 "    
-}
+} */
 
 img {
     height: auto;
@@ -135,7 +137,7 @@ main {
 
 main ol li {
     margin: .5em;
-    
+
 }
 
 .card {
@@ -147,11 +149,16 @@ main ol li {
     text-align: center;
 }
 
+#weather-icon {
+    margin-left: 70px;
+}
+
 .map {
     width: 400px;
     height: 300px;
     border: 0;
 }
+
 #base-footer {
     text-align: center;
 }
@@ -159,6 +166,7 @@ main ol li {
 #base-footer div p {
     margin: 5px;
 }
+
 .seperator {
     display: none;
 }

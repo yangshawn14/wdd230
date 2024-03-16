@@ -281,7 +281,7 @@ i {
     margin: 10px;
 }
 
-main:not(.directory) {
+main :not(.directory) {
     display: flex;
     flex-direction: column;
     padding: 5px;
