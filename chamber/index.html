@@ -106,11 +106,16 @@
         <section class="item3">
             <h2>Weather</h2>
             <hr>
-            <h4>Temperature: <span id="temp">40</span>°F</h4>
-            <h4>Wind speed: <span id="wind-speed">3</span>mph</h4>
+            <h4>Temperature: <span id="temp"></span> °F</h4>
+            <h4>Weather Description: <span id="weather-description"></span></h4>
+            <h4>Wind Speed: <span id="wind-speed"></span> mph</h4>
             <h4>Wind Chill: <span id="windchill"></span></h4>
-
+            <img id="weather-icon" src="" alt="">
+            <h3>Three-Day Forecast</h3>
+            <hr>
+            <div id="forecast"></div>
         </section>
+
 
         <!-- New Release -->
         <section class="item4">
@@ -208,7 +213,8 @@
     </footer>
 
     <script src="scripts/index.js"></script>
-    <script src="scripts/windchill.js"></script>
+    <script src="scripts/weather.js"></script>
+    <!-- <script src="scripts/windchill.js"></script> -->
 </body>
 
 </html>

@@ -79,6 +79,10 @@
          display: block;
      }
 
+     .item4 p {
+         line-height: 2.5rem;
+     }
+
      .item5 {
          grid-area: item5;
          /* display: grid;
@@ -101,12 +105,11 @@
          display: grid;
          grid-template-areas:
              'item2 item1 item1 item5'
-             'item2 item1 item1 item5'
              'item3 item1 item1 item5'
-             'item3 item1 item1 item5'
-             'item6 item4 item4 item5'
-             'item6 item4 item4 item5';
-         grid-template-rows: repeat(6, 1fr);
+             'item3 item4 item4 item5'
+             'item3 item4 item4 item5'
+             'item3 item6 item6 item6';
+         grid-template-rows: repeat(5, 1fr);
          grid-template-columns: repeat(4, 1fr);
      }
 
