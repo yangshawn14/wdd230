@@ -411,6 +411,7 @@ i {
 
 .item6 {
     display: none;
+    line-height: 1.5rem;
 }
 
 #join-btn {
