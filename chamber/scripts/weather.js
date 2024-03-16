@@ -70,6 +70,7 @@ function displayForecast(data) {
             <p>Temperature: ${forecastItem.main.temp} °F</p>
             <p>Description: ${forecastItem.weather[0].description}</p>
             <img src="https://openweathermap.org/img/wn/${forecastItem.weather[0].icon}@2x.png" alt="${forecastItem.weather[0].description}">
+            <hr>
         `;
 
         // Append forecast item to the forecast element

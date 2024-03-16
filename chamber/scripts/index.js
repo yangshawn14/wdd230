@@ -35,7 +35,30 @@ const lastModif = document.lastModified;
 year.innerHTML = `&copy; ${currYear}`
 dateModif.innerHTML = `Last Modified ${lastModif}`;
 
-// Display number of visits on Discover Page
+/*********************
+ * Banner
+ *********************/
+
+const banner = document.getElementById('banner');
+const closeBannerBtn = document.getElementById('closeBanner');
+
+// Get the current day of the week (0 = Sunday, 1 = Monday, ..., 6 = Saturday)
+const currentDay = new Date().getDay();
+
+// Check if the current day is Monday, Tuesday, or Wednesday(1, 2, or 3)
+if (currentDay >= 1 && currentDay <= 3) {
+	banner.style.display = 'block'; // Display the banner
+}
+
+// Add event listener to close the banner when the close button is clicked
+closeBannerBtn.addEventListener('click', function () {
+	banner.style.display = 'none'; // Hide the banner
+});
+
+
+/*********************
+ * Discover Page 
+ *********************/
 // 1️⃣ Initialize display element variable
 const visitMessage = document.querySelector("#visit-message");
 
@@ -99,4 +122,3 @@ function validatePassword() {
 		errorElement.textContent = '';
 	}
 }
-

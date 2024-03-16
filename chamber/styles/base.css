@@ -275,6 +275,26 @@ input:checked+.slider:before {
     margin: 0.25rem;
 }
 
+.banner {
+    display: none;
+    background-color: var(--secondary-color);
+    border: solid 1px;
+    padding: 10px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+#closeBanner {
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+
 i {
     display: flex;
     flex-direction: row;
@@ -343,6 +363,10 @@ i {
 /* .item2 h2 {
     margin-bottom: 0;
 } */
+
+.item3 {
+    text-align: center;
+}
 
 .item4 {
     display: none;
