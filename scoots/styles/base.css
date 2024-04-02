@@ -1,0 +1,284 @@
+/* Reset styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Define colors and fonts */
+:root {
+    /* Colors */
+    --primary-color: #f08a4b;
+    --secondary-color: #577590;
+    --accent1-color: #f2a541;
+    --accent2-color: #f3ca40;
+
+    /* Fonts */
+    --main-font: 'Lato', sans-serif;
+    --heading-font: 'Raleway', sans-serif;
+}
+
+body {
+    font-family: var(--main-font);
+    background-color: #fff;
+    color: #000;
+}
+
+/* Header styles */
+/* header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--secondary-color);
+    padding: 20px;
+    color: var(--accent1-color);
+}
+
+.logo {
+    width: 100%;
+    height: auto;
+}
+
+.nav-container {
+    display: flex;
+    align-items: center;
+}
+
+.nav-links {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.nav-links li:last-child {
+    margin-right: 0;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: var(--accent1-color);
+}
+
+.menu-toggle {
+    cursor: pointer;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: none;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+} */
+header {
+    display: grid;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header picture {
+    grid-column: 1;
+}
+
+header picture img,
+.footer-logo {
+    width: 100px;
+    border-radius: 50%;
+    margin: 15px;
+}
+
+header h1 {
+    margin: 0 auto;
+    grid-column: 2;
+    color: var(--primary);
+    font-family: 'Calistoga', Georgia, serif;
+    font-size: 40px;
+    line-height: 35px;
+}
+
+header nav {
+    grid-column: 1/4;
+    grid-row: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+li {
+    list-style: none;
+}
+
+nav ul {
+    padding-left: 0;
+    margin: 0;
+}
+
+li a {
+    display: block;
+    text-decoration: none;
+    color: var(--primary);
+    font-size: 20px;
+    padding: .5rem;
+
+}
+
+li a:hover {
+    background-color: var(--primary);
+    color: white;
+}
+
+.active {
+    text-decoration: underline;
+}
+
+header button span {
+    font-size: 40px;
+    color: var(--primary);
+}
+
+header button {
+    grid-column: 3;
+    border: none;
+    background-color: transparent;
+    width: 40px;
+    margin-right: .5rem;
+}
+
+.hamburger :nth-child(1),
+.nav-menu {
+    display: none;
+}
+
+button.open :nth-child(1),
+nav.open {
+    display: block;
+}
+
+button.open :nth-child(2) {
+    display: none;
+}
+
+.contact-info {
+    color: #fff;
+}
+
+/* Main content styles */
+main {
+    padding: 20px;
+}
+
+/* Call to action styles */
+.cta {
+    background-color: var(--accent1-color);
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.cta h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.cta p {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.button {
+    background-color: var(--secondary-color);
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Rental summary styles */
+.rental-summary {
+    background-color: var(--accent2-color);
+    color: #000;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.rental-summary h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.rental-summary ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+.rental-summary ul li {
+    margin-bottom: 5px;
+}
+
+/* Social media styles */
+.social-media {
+    background-color: var(--secondary-color);
+    color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.social-media h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.social-media ul {
+    list-style-type: none;
+}
+
+.social-media ul li {
+    margin-bottom: 10px;
+}
+
+.social-media ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Weather styles */
+.weather {
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.weather h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.weather p {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+/* Footer styles */
+footer {
+    background-color: var(--secondary-color);
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
