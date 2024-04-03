@@ -1,3 +1,12 @@
+const closeButton = document.querySelector('.close-button');
+const closeableMessage = document.querySelector('.closeable-message');
+
+if (closeButton && closeableMessage) {
+    closeButton.addEventListener('click', function () {
+        closeableMessage.style.display = 'none';
+    });
+}
+
 document.querySelector('#copyrightYear').innerHTML = new Date().getFullYear();
 document.querySelector('.lastModified').innerHTML = `Last modified: ${document.lastModified}`;
 

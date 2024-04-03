@@ -45,7 +45,7 @@
     </header>
     <!-- Closeable message for high temperature -->
     <div class="closeable-message">
-        Today's high temperature: <span id="high-temp"></span>°C
+        Today's high temperature: <span id="high-temp"></span>
         <button class="close-button">Close</button>
     </div>
 
@@ -55,12 +55,11 @@
         <section class="cta">
             <h1>Rent With Us Today!</h1>
             <p>Explore Cozumel with Scoots!</p>
-            <a href="reservations.html" class="button">Make a Reservation</a>
+            <a href="rentals.html" class="button">Make a Reservation</a>
         </section>
 
         <div class="hero">
             <h2>Rent With Us Today!</h2>
-            <a href="rentals.html" class="button">Rent</a>
             <picture>
                 <img src="images/" alt="" sizes="100vw" srcset="images/.webp 480w,
                 images/.webp 960w,
@@ -72,18 +71,30 @@
         <section class="rental-summary">
             <h2>Types of Rentals</h2>
             <ul>
-                <li>Honda Motor Scooters</li>
-                <li>Side-by-Side ATVs</li>
-                <li>Jeeps</li>
+                <li>
+                    Honda Motor Scooters
+                    <picture><img src="images/scooter.webp" alt="Picture of Scooter" loading="lazy"></picture>
+                    <p>Rent our premium scooters for convenient traveling.</p>
+                </li>
+                <li>
+                    Side-by-Side ATVs
+                    <picture><img src="images/atv.webp" alt="Picture of ATV" loading="lazy"></picture>
+                    <p>ATVs offer more room and fit up to 4 passengers.</p>
+                </li>
+                <li>
+                    Jeeps
+                    <picture><img src="images/jeep.webp" alt="Picture of Jeep" loading="lazy"></picture>
+                    <p>Travel in style and with comfort in our jeeps.</p>
+                </li>
             </ul>
         </section>
 
         <!-- Weather information -->
         <section class="weather">
             <h2>Weather</h2>
-            <p>Current Temperature: <span id="current-temp"></span>°C</p>
-            <p>Current Humidity: <span id="current-humidity"></span>%</p>
-            <p>Forecast for Tomorrow at 15:00: <span id="forecast-temp"></span>°C</p>
+            <p><span id="current-temp"></span></p>
+            <p><span id="current-humidity"></span></p>
+            <p>Forecast for Tomorrow at 15:00: <span id="forecast-temp"></span></p>
             <p>Weather Description: <span id="weather-description"></span></p>
             <!-- You can display weather icon here -->
         </section>
@@ -91,19 +102,35 @@
 
     <!-- Footer -->
     <footer>
-        <div class="contact-info">
-            <p>Email: info@scoots.com</p>
-            <p>Phone: +1234567890</p>
+        <div class="footer-info">
+            <img src="images/scoots-logo.webp" alt="Logo of Bountiful Foods" class="footer-logo">
+            <div class="contact-footer">
+                <h2>Scoots</h2>
+                <p>123 Anywhere St., Carlsbad, California</p>
+                <p>(123) 456 7890</p>
+                <p>info@scoots.com</p>
+            </div>
+            <div class="attributions">
+                <a href="attributions.html">Attributions</a>
+            </div>
+            <!-- Social media links -->
+            <div class="nav-social">
+                <a href="https://www.facebook.com" target="_blank"><img src="images/fb-icon.webp"
+                        alt="Facebook Logo"></a>
+                <a href="https://www.instagram.com" target="_blank"><img src="images/instagram-icon.webp"
+                        alt="Instagram Logo"></a>
+                <a href="https://www.linkedin.com" target="_blank"><img src="images/linkedin-icon.webp"
+                        alt="LinkedIn Logo"></a>
+            </div>
         </div>
-        <!-- Social media links -->
-        <section class="social-media">
-            <h2>Follow Us</h2>
-            <ul>
-                <li><a href="http://facebook.com"><i class="fa-brands fa-facebook" style="color: #eceff4;"></i></a></li>
-                <li><a href="http://twitter.com"><i class="fa-brands fa-twitter" style="color: #eceff4;"></i></a></li>
-            </ul>
-        </section>
-        <p>&copy; 2023 Scoots</p>
+        <div class="footer-base">
+            <span>&copy; <span id="copyrightYear"></span> Bountiful Foods</span>
+            <span class="separator"> | </span>
+            <span>Shawn Yang</span>
+            <span class="separator"> | </span>
+            <span>WDD 230</span>
+            <span class="lastModified"></span>
+        </div>
     </footer>
 
     <script src="scripts/index.js"></script>

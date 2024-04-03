@@ -22,69 +22,26 @@ body {
     font-family: var(--main-font);
     background-color: #fff;
     color: #000;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Call banner */
+.call-banner {
+    background-color: var(--accent2-color);
+    display: block;
+    text-align: center;
+    color: #000;
+    text-decoration: none;
+    padding: 0.9rem;
 }
 
 /* Header styles */
-/* header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: var(--secondary-color);
-    padding: 20px;
-    color: var(--accent1-color);
-}
-
-.logo {
-    width: 100%;
-    height: auto;
-}
-
-.nav-container {
-    display: flex;
-    align-items: center;
-}
-
-.nav-links {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-
-.nav-links li {
-    display: inline;
-    margin-right: 20px;
-}
-
-.nav-links li:last-child {
-    margin-right: 0;
-}
-
-.nav-links a {
-    text-decoration: none;
-    color: var(--accent1-color);
-}
-
-.menu-toggle {
-    cursor: pointer;
-}
-
-nav ul {
-    list-style-type: none;
-}
-
-nav ul li {
-    display: none;
-    margin-right: 20px;
-}
-
-nav ul li a {
-    color: #fff;
-    text-decoration: none;
-} */
 header {
     display: grid;
     align-items: center;
     justify-content: space-between;
+    background-color: var(--primary-color);
 }
 
 header picture {
@@ -94,7 +51,7 @@ header picture {
 header picture img,
 .footer-logo {
     width: 100px;
-    border-radius: 50%;
+    border-radius: 20%;
     margin: 15px;
 }
 
@@ -102,7 +59,7 @@ header h1 {
     margin: 0 auto;
     grid-column: 2;
     color: var(--primary);
-    font-family: 'Calistoga', Georgia, serif;
+    font-family: var(--heading-font);
     font-size: 40px;
     line-height: 35px;
 }
@@ -140,10 +97,6 @@ li a:hover {
     color: white;
 }
 
-.active {
-    text-decoration: underline;
-}
-
 header button span {
     font-size: 40px;
     color: var(--primary);
@@ -163,7 +116,7 @@ header button {
 }
 
 button.open :nth-child(1),
-nav.open {
+.nav-menu.open {
     display: block;
 }
 
@@ -173,6 +126,12 @@ button.open :nth-child(2) {
 
 .contact-info {
     color: #fff;
+}
+
+/* Closeable message styles */
+.closeable-message {
+    padding: 0.25rem;
+    text-align: center;
 }
 
 /* Main content styles */
@@ -231,6 +190,12 @@ main {
     margin-bottom: 5px;
 }
 
+.rental-summary img {
+    width: 100%;
+    max-width: 240px;
+    padding-top: 0.2rem;
+}
+
 /* Social media styles */
 .social-media {
     background-color: var(--secondary-color);
@@ -263,6 +228,7 @@ main {
     color: #fff;
     padding: 20px;
     margin-bottom: 20px;
+    text-align: center;
 }
 
 .weather h2 {
@@ -280,5 +246,53 @@ footer {
     background-color: var(--secondary-color);
     color: #fff;
     text-align: center;
-    padding: 10px;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+    display: block;
+}
+
+footer a:hover,
+.basic-link:hover {
+    color: #1a1a1a;
+}
+
+.separator {
+    display: none;
+}
+
+/* footer - base */
+
+.footer-info,
+.footer-base {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 0 1rem 0;
+    row-gap: 1rem;
+}
+
+.footer-base {
+    row-gap: 0;
+    background-color: var(--accent1-color);
+}
+
+.nav-social {
+    display: flex;
+    flex-direction: row;
+    column-gap: 10px;
+}
+
+.nav-social a img {
+    width: 35px;
+    border-radius: 7px;
+}
+
+.nav-social a img:hover {
+    transition: 1s;
+    transform: scale(1.2);
 }
