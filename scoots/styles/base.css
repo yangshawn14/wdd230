@@ -40,7 +40,7 @@ body {
 header {
     display: grid;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     background-color: var(--primary-color);
 }
 
@@ -168,6 +168,11 @@ main {
     font-size: 16px;
 }
 
+.cta a:hover {
+    background-color: var(--accent2-color);
+    color: #000;
+}
+
 #hero-img {
     width: 100%;
 }
@@ -198,6 +203,7 @@ main {
     width: 100%;
     max-width: 240px;
     padding-top: 0.2rem;
+    height: 185px;
 }
 
 /* Social media styles */

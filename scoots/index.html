@@ -10,6 +10,7 @@
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Lato&family=Raleway&display=swap" rel="stylesheet">
     <title>Scoots - Home</title>
+    <!-- Styles -->
     <link rel="stylesheet" href="../styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/larger.css">
@@ -33,8 +34,8 @@
             <span>X</span>
             <span>&#9776;</span>
         </button>
-        <nav>
-            <ul class="nav-menu">
+        <nav class="nav-menu">
+            <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="rentals.html">Rentals</a></li>
                 <li><a href="reservations.html">Reservations</a></li>
@@ -65,37 +66,39 @@
             </section>
         </div>
 
-        <!-- Summary information about types of rentals -->
-        <section class="rental-summary">
-            <h2>Types of Rentals</h2>
-            <ul>
-                <li>
-                    Honda Motor Scooters
-                    <picture><img src="images/scooter.webp" alt="Picture of Scooter" loading="lazy"></picture>
-                    <p>Rent our premium scooters for convenient traveling.</p>
-                </li>
-                <li>
-                    Side-by-Side ATVs
-                    <picture><img src="images/atv.webp" alt="Picture of ATV" loading="lazy"></picture>
-                    <p>ATVs offer more room and fit up to 4 passengers.</p>
-                </li>
-                <li>
-                    Jeeps
-                    <picture><img src="images/jeep.webp" alt="Picture of Jeep" loading="lazy"></picture>
-                    <p>Travel in style and with comfort in our jeeps.</p>
-                </li>
-            </ul>
-        </section>
+        <div class="summary-weather-container">
+            <!-- Summary information about types of rentals -->
+            <section class="rental-summary">
+                <h2>Types of Rentals</h2>
+                <ul>
+                    <li class="scooter">
+                        <h4>Honda Motor Scooters</h4>
+                        <picture><img src="images/scooter.webp" alt="Picture of Scooter" loading="lazy"></picture>
+                        <p>Rent our premium scooters for convenient traveling.</p>
+                    </li>
+                    <li class="atv">
+                        <h4>Side-by-Side ATVs</h4>
+                        <picture><img src="images/atv.webp" alt="Picture of ATV" loading="lazy"></picture>
+                        <p>ATVs offer more room and fit up to 4 passengers.</p>
+                    </li>
+                    <li class="jeep">
+                        <h4>Jeeps</h4>
+                        <picture><img src="images/jeep.webp" alt="Picture of Jeep" loading="lazy"></picture>
+                        <p>Travel in style and with comfort in our jeeps.</p>
+                    </li>
+                </ul>
+            </section>
 
-        <!-- Weather information -->
-        <section class="weather">
-            <h2>Weather</h2>
-            <p><span id="current-temp"></span></p>
-            <p><span id="current-humidity"></span></p>
-            <p>Forecast for Tomorrow at 15:00: <span id="forecast-temp"></span></p>
-            <p>Weather Description: <span id="weather-description"></span></p>
-            <!-- You can display weather icon here -->
-        </section>
+            <!-- Weather information -->
+            <section class="weather">
+                <h2>Weather</h2>
+                <p><span id="current-temp"></span></p>
+                <p><span id="current-humidity"></span></p>
+                <p>Forecast for Tomorrow at 15:00: <span id="forecast-temp"></span></p>
+                <p>Weather Description: <span id="weather-description"></span></p>
+                <!-- You can display weather icon here -->
+            </section>
+        </div>
     </main>
 
     <!-- Footer -->

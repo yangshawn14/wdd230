@@ -1,4 +1,117 @@
+:root {
+    /* Colors */
+    --primary-color: #f08a4b;
+    --secondary-color: #577590;
+    --accent1-color: #f2a541;
+    --accent2-color: #f3ca40;
+
+    /* Fonts */
+    --main-font: 'Lato', sans-serif;
+    --heading-font: 'Raleway', sans-serif;
+}
+
 @media only screen and (min-width: 480px) {
+
+    .hamburger {
+        display: none;
+    }
+
+    .nav-menu {
+        display: block;
+        grid-column: 3;
+        grid-row: 1;
+        margin: 16px;
+
+    }
+
+    .nav-menu ul {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    .nav-menu ul li {
+        padding: 8px;
+    }
+
+    .nav-menu ul li a {
+        padding: 8px 16px;
+    }
+
+    .hero {
+        display: grid;
+        place-items: center;
+        /* Center content vertically and horizontally */
+        position: relative;
+        /* Ensure positioning context for child elements */
+        overflow: hidden;
+        /* Hide overflow of CTA */
+    }
+
+    .hero-img {
+        grid-area: 1 / 1;
+        /* Span the entire grid area */
+        width: 100%;
+        height: auto;
+    }
+
+    .cta {
+        position: absolute;
+        /* Position the CTA relative to the hero */
+        bottom: 20px;
+        /* Adjust as needed */
+        background-color: var(--accent1-color);
+        padding: 20px;
+        text-align: center;
+        border-radius: 6px;
+    }
+
+    .summary-weather-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+    }
+
+    .rental-summary,
+    .weather {
+        border-radius: 10px;
+    }
+
+    .rental-summary {
+        display: grid;
+        grid-template-rows: 25px 1fr;
+        gap: 25px;
+        grid-column: 1/2;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .rental-summary h2 {
+        text-align: center;
+    }
+
+    .rental-summary ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .rental-summary li {
+        display: flex;
+        flex-direction: column;
+        gap: .2rem;
+        padding: 10px;
+    }
+
+    .weather {
+        grid-column: 2/3;
+        display: flex;
+        flex-direction: column;
+        gap: 5.5rem;
+        align-items: center;
+    }
+
     .footer-info {
         display: grid;
         column-gap: 50px;
