@@ -1,0 +1,37 @@
+@media only screen and (min-width: 480px) {
+    .footer-info {
+        display: grid;
+        column-gap: 50px;
+    }
+
+    .attributions,
+    .nav-social,
+    .contact-footer,
+    .footer-info img {
+        grid-row: 1;
+    }
+
+    .footer-info {
+        column-gap: 100px;
+    }
+
+    .footer-base {
+        display: flex;
+        flex-direction: row;
+        column-gap: 8px;
+    }
+
+    .separator {
+        display: inherit;
+    }
+
+    .who,
+    .about-contact {
+        margin: auto 80px;
+        padding: 16px;
+    }
+
+    .who {
+        text-align: justify;
+    }
+}
