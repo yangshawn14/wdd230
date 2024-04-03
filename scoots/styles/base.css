@@ -251,6 +251,39 @@ main {
     margin-bottom: 10px;
 }
 
+/* Rentals page */
+.rentals-page {
+    padding: 0;
+    margin: 0.5rem;
+}
+
+.rental-pricing-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.rental-pricing-table caption {
+    font-weight: bold;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.rental-pricing-table th,
+.rental-pricing-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+.rental-pricing-table th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+.rental-pricing-table tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
 /* Footer styles */
 footer {
     background-color: var(--secondary-color);
